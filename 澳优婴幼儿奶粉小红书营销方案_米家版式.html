@@ -1,0 +1,1980 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>从配方成分竞争到决策路径竞争｜澳优婴幼儿奶粉小红书营销策略方案</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --paper: #ffffff;
+      --ink: #17233a;
+      --muted: #60708a;
+      --line: #d7e2f1;
+      --brand: #0b4aa2;
+      --brand-deep: #07357c;
+      --brand-dark: #05275f;
+      --accent: #f59a00;
+      --accent-deep: #c97800;
+      --accent-soft: #fff3d8;
+      --green: #2f7d68;
+      --green-soft: #e7f1ed;
+      --gold: #f59a00;
+      --gold-soft: #fff3d8;
+      --blue: #0b4aa2;
+      --blue-soft: #e8f1ff;
+      --red-soft: #eaf2ff;
+      --shadow: 0 18px 44px rgba(7, 53, 124, 0.12);
+      --radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif;
+      line-height: 1.68;
+      letter-spacing: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #fff;
+    }
+
+    a,
+    button {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .page {
+      width: min(1200px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 18px 0 64px;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow: 0 10px 24px rgba(32, 37, 35, 0.06);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav a {
+      min-height: 36px;
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 12px;
+      color: var(--brand-deep);
+      text-decoration: none;
+      border: 1px solid #c8d9f2;
+      border-radius: 999px;
+      background: #fff;
+      font-size: 14px;
+      font-weight: 800;
+      transition: transform 0.16s ease, background 0.16s ease, color 0.16s ease;
+    }
+
+    .nav a:hover {
+      color: #fff;
+      background: var(--brand);
+      transform: translateY(-1px);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.06fr) minmax(340px, 0.94fr);
+      gap: 28px;
+      min-height: 680px;
+      padding: 40px;
+      color: #fff;
+      border-radius: var(--radius);
+      background:
+        radial-gradient(circle at 86% 14%, rgba(245, 154, 0, 0.28), transparent 30%),
+        linear-gradient(135deg, rgba(5, 39, 95, 0.98), rgba(11, 74, 162, 0.94));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 0;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 780px;
+      font-size: clamp(34px, 4.6vw, 58px);
+      font-weight: 900;
+      line-height: 1.08;
+    }
+
+    .hero-title-line {
+      display: block;
+      white-space: nowrap;
+    }
+
+    h2 {
+      margin-bottom: 16px;
+      color: var(--brand-deep);
+      font-size: 30px;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 19px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .lead {
+      max-width: 760px;
+      margin-top: 20px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 19px;
+    }
+
+    .hero-quote {
+      margin-top: 28px;
+      padding: 18px;
+      color: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.09);
+      font-size: 18px;
+      font-weight: 740;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 6px 10px;
+      color: var(--brand-deep);
+      border: 1px solid #c8d9f2;
+      border-radius: 999px;
+      background: #fff;
+      font-size: 13px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .hero .tag {
+      color: #fff;
+      border-color: rgba(245, 154, 0, 0.44);
+      background: rgba(245, 154, 0, 0.18);
+    }
+
+    .hero-visual {
+      position: relative;
+      aspect-ratio: 3 / 4;
+      align-self: center;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 22px 56px rgba(5, 39, 95, 0.22);
+    }
+
+    .hero-visual img {
+      object-position: center;
+    }
+
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 44%, rgba(5, 39, 95, 0.68));
+    }
+
+    .caption,
+    .label {
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      z-index: 2;
+      padding: 14px;
+      color: #fff;
+      border-radius: var(--radius);
+      background: rgba(5, 39, 95, 0.6);
+      backdrop-filter: blur(10px);
+      font-size: 14px;
+      font-weight: 760;
+    }
+
+    section {
+      margin-top: 18px;
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      box-shadow: 0 10px 28px rgba(32, 37, 35, 0.055);
+    }
+
+    .section-intro {
+      max-width: 860px;
+      margin-bottom: 18px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card-grid.two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+      min-width: 0;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .card.red {
+      border-color: #c8d9f2;
+      background: var(--red-soft);
+    }
+
+    .card.green {
+      border-color: #cbded5;
+      background: var(--green-soft);
+    }
+
+    .card.gold {
+      border-color: #ffe0a3;
+      background: var(--gold-soft);
+    }
+
+    .card.blue {
+      border-color: #cbdde8;
+      background: var(--blue-soft);
+    }
+
+    .card p,
+    .output p,
+    .demo-meta,
+    .table-wrap td,
+    .script-box {
+      color: var(--muted);
+    }
+
+    .number {
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      margin-bottom: 12px;
+      color: #fff;
+      border-radius: 50%;
+      background: var(--accent);
+      font-weight: 900;
+    }
+
+    .contrast {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+      gap: 12px;
+      align-items: center;
+      margin-top: 14px;
+    }
+
+    .vs {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      color: #fff;
+      border-radius: 50%;
+      background: var(--brand);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .image-panel {
+      position: relative;
+      aspect-ratio: 3 / 4;
+      margin: 0;
+      overflow: hidden;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .path-lab,
+    .story-board {
+      display: grid;
+      grid-template-columns: minmax(260px, 0.38fr) minmax(0, 1fr);
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .control-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .path-btn,
+    .persona-btn,
+    .scene-btn {
+      width: 100%;
+      min-height: 58px;
+      padding: 13px 14px;
+      color: var(--brand-deep);
+      text-align: left;
+      border: 1px solid #c8d9f2;
+      border-radius: var(--radius);
+      background: #fff;
+      font-weight: 850;
+      transition: transform 0.16s ease, background 0.16s ease, color 0.16s ease, border-color 0.16s ease;
+    }
+
+    .path-btn:hover,
+    .persona-btn:hover,
+    .scene-btn:hover,
+    .path-btn.is-active,
+    .persona-btn.is-active,
+    .scene-btn.is-active {
+      color: #fff;
+      border-color: var(--brand);
+      background: var(--brand);
+      transform: translateY(-1px);
+    }
+
+    .output {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      min-height: 330px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, #fff, #f7fbff);
+    }
+
+    .output.has-media {
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 0.42fr);
+    }
+
+    .output-copy {
+      padding: 24px;
+      align-self: center;
+    }
+
+    .kicker {
+      margin-bottom: 8px;
+      color: var(--accent-deep);
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .script-box {
+      margin-top: 16px;
+      padding: 14px;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      background: rgba(11, 74, 162, 0.07);
+      font-size: 15px;
+    }
+
+    .output-media {
+      aspect-ratio: 3 / 4;
+      margin: 0;
+      overflow: hidden;
+      align-self: center;
+    }
+
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .demo-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 12px 28px rgba(32, 37, 35, 0.06);
+    }
+
+    .demo-image {
+      position: relative;
+      aspect-ratio: 3 / 4;
+      margin: 0;
+      overflow: hidden;
+      background: #e8f1ff;
+    }
+
+    .demo-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.22s ease;
+    }
+
+    .demo-slide.is-active {
+      opacity: 1;
+    }
+
+    .demo-nav {
+      position: absolute;
+      top: 50%;
+      z-index: 3;
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      padding: 0;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.34);
+      border-radius: 50%;
+      background: rgba(5, 39, 95, 0.52);
+      transform: translateY(-50%);
+    }
+
+    .demo-nav.prev {
+      left: 10px;
+    }
+
+    .demo-nav.next {
+      right: 10px;
+    }
+
+    .demo-dots {
+      position: absolute;
+      z-index: 3;
+      left: 0;
+      right: 0;
+      bottom: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .demo-dot {
+      width: 8px;
+      height: 8px;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    .demo-dot.is-active {
+      background: #fff;
+    }
+
+    .demo-body {
+      padding: 18px;
+    }
+
+    .demo-title {
+      font-size: 20px;
+    }
+
+    .demo-list {
+      display: grid;
+      gap: 8px;
+      padding-left: 18px;
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .data-grid,
+    .metric-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .data-card,
+    .metric-block {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .metric {
+      margin: 10px 0 6px;
+      color: var(--accent);
+      font-size: 42px;
+      line-height: 1;
+      font-weight: 920;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+    }
+
+    th,
+    td {
+      padding: 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      font-size: 14px;
+    }
+
+    th {
+      color: var(--brand-deep);
+      background: var(--blue-soft);
+      font-weight: 900;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .model {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.7fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .ladder {
+      display: grid;
+      gap: 12px;
+    }
+
+    .ladder-step {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .ladder-step:nth-child(2) {
+      margin-left: 34px;
+    }
+
+    .ladder-step:nth-child(3) {
+      margin-left: 68px;
+    }
+
+    .opportunity-rows {
+      display: grid;
+      gap: 14px;
+    }
+
+    .opportunity-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(180px, 0.28fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .opportunity-row .ladder-step {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 0;
+    }
+
+    .opportunity-row figure {
+      aspect-ratio: 3 / 4;
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .image-stack {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .image-stack figure {
+      aspect-ratio: 3 / 4;
+      margin: 0;
+      overflow: hidden;
+      border-radius: var(--radius);
+    }
+
+    .image-stack .tall {
+      grid-row: auto;
+    }
+
+    .selector-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .selector-card {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .step-num {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 12px;
+      color: #fff;
+      border-radius: 50%;
+      background: var(--accent);
+      font-weight: 900;
+    }
+
+    .ending {
+      padding: 0;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top right, rgba(245, 154, 0, 0.24), transparent 32%),
+        var(--brand-dark);
+    }
+
+    .ending-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.75fr);
+      min-height: 420px;
+    }
+
+    .ending-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 38px;
+      color: #fff;
+    }
+
+    .ending-copy h2 {
+      color: #fff;
+      font-size: clamp(30px, 4vw, 54px);
+    }
+
+    .ending-copy .lead {
+      color: rgba(255, 255, 255, 0.86);
+    }
+
+    .ending-image {
+      margin: 0;
+      aspect-ratio: 3 / 4;
+      align-self: center;
+    }
+
+    .ending-image img {
+      object-fit: contain;
+      padding: 56px;
+      background: #fff;
+    }
+
+    .footnote {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .insight-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.78fr) minmax(300px, 0.42fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .insight-stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .insight-list {
+      display: grid;
+      gap: 8px;
+      padding-left: 18px;
+      margin: 12px 0 0;
+      color: var(--muted);
+    }
+
+    .insight-callout {
+      padding: 18px;
+      border: 1px solid #ffe0a3;
+      border-left: 5px solid var(--accent);
+      border-radius: var(--radius);
+      background: var(--accent-soft);
+    }
+
+    .insight-callout p {
+      color: var(--muted);
+    }
+
+    .stage-card {
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .stage-image {
+      aspect-ratio: 3 / 4;
+      margin: 0;
+      overflow: hidden;
+      background: var(--blue-soft);
+    }
+
+    .stage-body {
+      padding: 18px;
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .media-grid figure {
+      aspect-ratio: 3 / 4;
+      margin: 0;
+      overflow: hidden;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: var(--blue-soft);
+    }
+
+    .compact-table table {
+      min-width: 640px;
+    }
+
+    .compact-table th,
+    .compact-table td {
+      padding: 11px 12px;
+      font-size: 13px;
+    }
+
+    .appendix-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .appendix-item {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .appendix-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.48fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .flow-chart {
+      display: grid;
+      gap: 10px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, #fff, #f7fbff);
+    }
+
+    .flow-step {
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr);
+      gap: 12px;
+      align-items: center;
+      padding: 13px;
+      border: 1px solid #c8d9f2;
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .flow-num {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      color: #fff;
+      border-radius: 50%;
+      background: var(--brand);
+      font-weight: 900;
+    }
+
+    .flow-step h3 {
+      margin-bottom: 2px;
+      font-size: 17px;
+    }
+
+    .flow-step p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .appendix-metrics {
+      display: grid;
+      gap: 12px;
+    }
+
+    .appendix-metric {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .appendix-metric strong {
+      display: block;
+      color: var(--accent);
+      font-size: 30px;
+      line-height: 1.1;
+      font-weight: 920;
+    }
+
+    .appendix-metric span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .appendix-note {
+      margin-top: 14px;
+      padding: 14px;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      font-size: 13px;
+    }
+
+    .cover-strategy-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .cover-card {
+      overflow: hidden;
+      padding: 0;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .cover-card figure {
+      aspect-ratio: 3 / 4;
+      margin: 0;
+      overflow: hidden;
+      background: var(--blue-soft);
+    }
+
+    .cover-card-body {
+      padding: 18px;
+    }
+
+    .cover-gallery-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .cover-gallery-strip figure {
+      aspect-ratio: 3 / 4;
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .footer {
+      padding: 22px 0 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 920px) {
+      .page {
+        width: min(100% - 24px, 760px);
+        padding-top: 12px;
+      }
+
+      .hero,
+      .split,
+      .path-lab,
+      .story-board,
+      .model,
+      .opportunity-row,
+      .ending-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 24px;
+        min-height: auto;
+      }
+
+      .hero-visual,
+      .image-panel,
+      .ending-image {
+        min-height: 0;
+      }
+
+      section {
+        padding: 24px;
+      }
+
+      .card-grid,
+      .card-grid.two,
+      .demo-grid,
+      .data-grid,
+      .metric-row,
+      .media-grid,
+      .insight-layout,
+      .appendix-layout,
+      .cover-strategy-grid,
+      .selector-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cover-gallery-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .output.has-media,
+      .output {
+        grid-template-columns: 1fr;
+      }
+
+      .output-media {
+        min-height: 0;
+      }
+
+      .contrast {
+        grid-template-columns: 1fr;
+      }
+
+      .vs {
+        margin: 0 auto;
+      }
+
+      .ladder-step:nth-child(2),
+      .ladder-step:nth-child(3) {
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .page {
+        width: calc(100% - 16px);
+      }
+
+      .nav {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+      }
+
+      .nav a,
+      .tag {
+        white-space: nowrap;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .hero-title-line {
+        white-space: normal;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      section {
+        padding: 18px;
+      }
+
+      .selector-card,
+      .card,
+      .output-copy,
+      .demo-body {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav" aria-label="页面导航">
+      <a href="#opening">核心判断</a>
+      <a href="#truth">用户真相</a>
+      <a href="#personas">三类人群</a>
+      <a href="#path">决策路径</a>
+      <a href="#scenes">内容场景</a>
+      <a href="#content-demo">内容 Demo</a>
+      <a href="#competitor">竞品洞察</a>
+      <a href="#matrix">达人矩阵</a>
+      <a href="#selector">选号机制</a>
+      <a href="#iteration">迭代优化</a>
+      <a href="#cover-appendix">附录2</a>
+    </nav>
+
+    <header class="hero" id="opening">
+      <div class="hero-copy">
+        <p class="eyebrow">AUSNUTRIA · 小红书婴幼儿奶粉营销策略方案</p>
+        <h1><span class="hero-title-line">从“配方成分的竞争”</span><span class="hero-title-line">到“决策路径竞争”</span></h1>
+        <p class="lead">婴幼儿奶粉不是冲动消费品。小红书上的关键任务，不只是让澳优被看见，而是让澳优在用户真正开始比较之前，成为他们愿意收藏、咨询、反复核验的信息来源。</p>
+        <div class="hero-quote">澳优要做的不是把成分表讲得更复杂，而是把新手父母的焦虑拆成可理解、可比较、可咨询、可决策的路径。</div>
+        <div class="tag-row">
+          <span class="tag">前置教育</span>
+          <span class="tag">真实喂养</span>
+          <span class="tag">理性转化</span>
+          <span class="tag">小红书搜索场</span>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <img src="assets/IMG_0229.jpg" alt="澳优婴幼儿奶粉与母婴生活场景">
+        <figcaption class="caption">用户不是先想买一罐奶粉，而是先想知道：我家宝宝现在这个阶段，到底该怎么稳妥地选。</figcaption>
+      </figure>
+    </header>
+
+    <section id="truth">
+      <h2>用户买的从来不是一罐奶粉</h2>
+      <div class="split">
+        <div>
+          <p class="section-intro">奶粉内容如果只做“产品卖点展示”，很容易落入成分、价格和渠道的碎片化竞争。真正能进入用户心里的内容，要先回答父母在家庭决策里最怕的那件事：我是不是选得有依据。</p>
+          <div class="card-grid">
+            <article class="card red">
+              <span class="number">1</span>
+              <h3>阶段清楚</h3>
+              <p>孩子不同月龄的喂养选择、转段准备和家庭沟通有章法，不再临时抱佛脚。</p>
+            </article>
+            <article class="card green">
+              <span class="number">2</span>
+              <h3>信息可核验</h3>
+              <p>产品资质、适用月龄、包装信息、官方渠道和客服入口都能被看见、被复核。</p>
+            </article>
+            <article class="card gold">
+              <span class="number">3</span>
+              <h3>购买更安心</h3>
+              <p>下单前知道该问什么、查什么、怎么和家人统一标准，降低高信任成本。</p>
+            </article>
+          </div>
+          <div class="contrast">
+            <article class="card">
+              <h3>传统卖法</h3>
+              <p>强调配方、奶源、营养成分、价格、渠道和促销信息。</p>
+            </article>
+            <div class="vs">VS</div>
+            <article class="card red">
+              <h3>路径卖法</h3>
+              <p>帮助父母从“产生问题”走到“建立信任”，再完成“购买确认”。</p>
+            </article>
+          </div>
+        </div>
+        <figure class="image-panel">
+          <img src="assets/28341780501795_.pic_hd.jpg" alt="母婴家庭奶粉购买和囤货场景">
+          <figcaption class="caption">对于婴幼儿奶粉，能判断，才会更接近信任。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="competitor">
+      <h2>竞品正在争夺“决策路径入口”</h2>
+      <p class="section-intro">奶粉用户决策路径可拆为三段。不同达人层级和内容形态，正在承担理性解释、真实生活渗透和问题场景抢占的不同任务。澳优要竞争的不是单点曝光，而是每个关键节点的进入机会。</p>
+      <div class="data-grid">
+        <article class="data-card stage-card">
+          <figure class="stage-image">
+            <img src="assets/28461780501809_.pic_hd.jpg" alt="测评对比内容形态">
+          </figure>
+          <div class="stage-body">
+            <p class="kicker">信任建立 · 中高粉测评/对比</p>
+            <h3>理性决策终端入口</h3>
+            <div class="metric">44.62%</div>
+            <p>惠氏在 200,001-300,000 粉层“奶粉测评/对比”内容占比。中高粉达人更像选奶决策顾问。</p>
+            <div class="tag-row">
+              <span class="tag">测评对比</span>
+              <span class="tag">候选清单</span>
+            </div>
+          </div>
+        </article>
+        <article class="data-card stage-card">
+          <figure class="stage-image">
+            <img src="assets/ff66dd02769a805142d977cecb75536b.jpg" alt="晒单囤货内容形态">
+          </figure>
+          <div class="stage-body">
+            <p class="kicker">购买确认 · 低粉晒单/囤货</p>
+            <h3>真实购买氛围</h3>
+            <div class="metric">26.4%</div>
+            <p>惠氏在 1,000-5,000 粉层“购物晒单/囤货”内容占比。低粉内容承接临门一脚。</p>
+            <div class="tag-row">
+              <span class="tag">晒单囤货</span>
+              <span class="tag">渠道确认</span>
+            </div>
+          </div>
+        </article>
+        <article class="data-card stage-card">
+          <figure class="stage-image">
+            <img src="assets/919b5fa052cfe54da4a04b74b4bf9a62.jpg" alt="科普清单内容形态">
+          </figure>
+          <div class="stage-body">
+            <p class="kicker">问题进入 · 问题场景搜索</p>
+            <h3>高意图搜索前置</h3>
+            <div class="metric">24.68%</div>
+            <p>a2 在 50,001-100,000 粉层“敏感肠胃/特殊需求”内容占比。问题场景常发生在购买决策前夜。</p>
+            <div class="tag-row">
+              <span class="tag">科普清单</span>
+              <span class="tag">搜索收藏</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="footnote">数据来源：小红书 2025.06-2026.06 奶粉行业内容数据；基于品牌关键词检索及蒲公英达人匹配，筛选粉丝量 &gt;200 达人内容，最终有效样本 137,897 条，覆盖 22 个奶粉品牌。</p>
+    </section>
+
+    <section id="competitor-insight-1">
+      <h2>中高粉达人：用测评 / 对比进入用户候选清单</h2>
+      <p class="section-intro">中高粉达人更像“选奶决策顾问”。她们帮助用户理解差异、降低风险，并推动品牌进入候选清单。</p>
+      <div class="split">
+        <div>
+          <div class="data-grid">
+            <article class="data-card">
+              <p class="kicker">美素佳儿</p>
+              <h3>100,001-200,000 粉层</h3>
+              <div class="metric">38.03%</div>
+              <p>“奶粉测评 / 对比”内容占比。</p>
+            </article>
+            <article class="data-card">
+              <p class="kicker">惠氏</p>
+              <h3>200,001-300,000 粉层</h3>
+              <div class="metric">44.62%</div>
+              <p>“奶粉测评 / 对比”内容占比。</p>
+            </article>
+            <article class="data-card">
+              <p class="kicker">爱他美</p>
+              <h3>100,001-200,000 粉层</h3>
+              <div class="metric">26.47%</div>
+              <p>“奶粉测评 / 对比”内容占比。</p>
+            </article>
+          </div>
+          <div class="script-box">美素佳儿、惠氏、爱他美等品牌，正在中高粉达人矩阵中明显加码“奶粉测评 / 横向对比”类内容占比。<br><br>其核心策略并非单纯增加产品信息曝光，而是借助中高粉达人更强的专业背书与用户信任感，在消费者进入高决策阶段时，通过“成分、营养、吸收、价格、适龄段”等维度的对比内容，提前完成用户决策心智占位，实现竞品决策拦截与转化承接。</div>
+        </div>
+        <figure class="image-panel">
+          <img src="assets/32a946827b391f6bf33355fb7005e064.jpg" alt="测评类笔记拼图和对比表格视觉">
+          <figcaption class="caption">测评 / 对比内容承担理性解释、品牌候选清单进入和用户购买风险降低的任务。</figcaption>
+        </figure>
+      </div>
+      <p class="footnote">数据来源：小红书 2025.06-2026.06 奶粉行业内容数据；基于品牌关键词检索及蒲公英达人匹配，筛选粉丝量 &gt;200 达人内容，最终有效样本 137,897 条，覆盖 22 个奶粉品牌。</p>
+    </section>
+
+    <section id="competitor-insight-2">
+      <h2>低粉达人：用晒单 / 囤货制造真实购买氛围</h2>
+      <p class="section-intro">低粉内容不是简单补量，而是把品牌放进真实购买语境里，帮助用户完成临门一脚：有没有真实妈妈在买、是否适合长期日常购买、现在买是否划算、哪里买和怎么买更安心。</p>
+      <div class="card-grid">
+        <article class="card">
+          <p class="kicker">惠氏 · 1000-5000 粉层</p>
+          <h3>购物晒单 / 囤货</h3>
+          <div class="metric">26.4%</div>
+          <p>该层级 Top1。低粉内容更像真实购买场景，用晒单和囤货理由承接临门一脚。</p>
+        </article>
+        <article class="card">
+          <p class="kicker">飞鹤 · 1000-5000 粉层</p>
+          <h3>品牌活动 / 线下活动</h3>
+          <div class="metric">16.45%</div>
+          <p>该层级 Top2。活动内容把品牌触点落到线下、门店和可参与机制中。</p>
+        </article>
+        <article class="card">
+          <p class="kicker">飞鹤 · 1000-5000 粉层</p>
+          <h3>补贴促销 / 门店导购</h3>
+          <div class="metric">11.21%</div>
+          <p>该层级 Top3。促销与导购内容降低购买动作的不确定感，强化“现在怎么买”。</p>
+        </article>
+      </div>
+      <div class="media-grid">
+        <figure><img src="assets/IMG_0239.jpg" alt="囤货晒单素材"></figure>
+        <figure><img src="assets/IMG_0240.jpg" alt="购物车截图类素材"></figure>
+        <figure><img src="assets/IMG_0241.jpg" alt="购买场景素材"></figure>
+      </div>
+      <p class="footnote">数据来源：小红书 2025.06-2026.06 奶粉行业内容数据；基于品牌关键词检索及蒲公英达人匹配，筛选粉丝量 &gt;200 达人内容，最终有效样本 137,897 条，覆盖 22 个奶粉品牌。</p>
+    </section>
+
+    <section id="competitor-insight-3">
+      <h2>功能型品牌：提前进入高意图搜索场景</h2>
+      <p class="section-intro">a2、合生元持续绑定“敏感肠胃 / 特殊需求”等问题场景。这类内容发生在购买决策前夜，用户带着具体问题主动搜索时，品牌更容易进入高质量比较路径。</p>
+      <div class="insight-layout">
+        <div>
+          <div class="data-grid">
+            <article class="data-card">
+              <p class="kicker">a2 · 50,001-100,000 粉层</p>
+              <h3>敏感肠胃 / 特殊需求</h3>
+              <div class="metric">24.68%</div>
+              <p>该内容形态在腰部达人层级居前，适合承接“宝宝具体问题”相关搜索。</p>
+            </article>
+            <article class="data-card">
+              <p class="kicker">a2 · 10,001-50,000 粉层</p>
+              <h3>敏感肠胃 / 特殊需求</h3>
+              <div class="metric">24.65%</div>
+              <p>中腰部达人持续放大问题场景，形成稳定内容心智。</p>
+            </article>
+            <article class="data-card">
+              <p class="kicker">合生元 · 50,001-100,000 粉层</p>
+              <h3>敏感肠胃 / 特殊需求</h3>
+              <div class="metric">22.56%</div>
+              <p>功能型问题内容在腰部达人层级处于前列，帮助品牌提前进入比较路径。</p>
+            </article>
+          </div>
+          <div class="media-grid">
+            <figure><img src="assets/IMG_0243.PNG" alt="用户问题搜索场景素材"></figure>
+            <figure><img src="assets/IMG_0244.PNG" alt="专业科普内容截图素材"></figure>
+            <figure><img src="assets/cover-gallery/trust-screenshot-bg.jpg" alt="专业科普内容拼图素材"></figure>
+          </div>
+        </div>
+        <aside class="insight-callout">
+          <p class="kicker">用户问题</p>
+          <h3>抢占购买决策前夜</h3>
+          <ul class="insight-list">
+            <li>宝宝肠胃敏感时，选奶前要先了解什么？</li>
+            <li>喂养吸收相关问题出现时，家长会搜索什么？</li>
+            <li>转奶不适应时，用户会如何比较品牌？</li>
+            <li>特殊喂养需求家庭，会优先收藏什么内容？</li>
+          </ul>
+        </aside>
+      </div>
+      <p class="footnote">数据来源：小红书 2025.06-2026.06 奶粉行业内容数据；基于品牌关键词检索及蒲公英达人匹配，筛选粉丝量 &gt;200 达人内容，最终有效样本 137,897 条，覆盖 22 个奶粉品牌。</p>
+    </section>
+
+    <section id="opportunity">
+      <h2>澳优的机会：完整决策链路，而不是内容铺量</h2>
+      <div class="opportunity-rows">
+        <div class="opportunity-row">
+          <article class="ladder-step">
+            <p class="kicker">Layer 01</p>
+            <h3>问题进入</h3>
+            <p>用低粉达人、真实妈妈和素人号内容，进入月龄、转奶、喂养焦虑、家庭沟通等搜索讨论及曝光路径。</p>
+          </article>
+          <figure><img src="assets/IMG_0245.jpg" alt="前置教育内容素材"></figure>
+        </div>
+
+        <div class="opportunity-row">
+          <article class="ladder-step">
+            <p class="kicker">Layer 02</p>
+            <h3>信任建立</h3>
+            <p>用中高粉达人、专业测评、横向对比、成分解释与信息核验，帮助澳优进入品牌候选清单。</p>
+          </article>
+          <figure><img src="assets/IMG_0246.jpg" alt="真实喂养内容素材"></figure>
+        </div>
+
+        <div class="opportunity-row">
+          <article class="ladder-step">
+            <p class="kicker">Layer 03</p>
+            <h3>购买确认</h3>
+            <p>用晒单、囤货理由、购买攻略、官方客服和活动承接，降低用户下单前的不确定感。</p>
+          </article>
+          <figure><img src="assets/IMG_0247.jpg" alt="购买确认内容素材"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="personas">
+      <h2>三类人群：从准备到长期选择</h2>
+      <p class="section-intro">这不是三群完全分开的用户，而是家庭在 0-36 月龄喂养周期里的三种典型状态。同一个家庭，也可能从孕晚期准备逐渐进入转段磨合，再进入长期购买规划。</p>
+      <div class="path-lab">
+        <div class="control-stack">
+          <button class="persona-btn is-active" type="button" data-persona="starter">新手安心派｜孕晚期/0-6 月龄</button>
+          <button class="persona-btn" type="button" data-persona="routine">喂养磨合派｜6-18 月龄</button>
+          <button class="persona-btn" type="button" data-persona="planner">成长规划派｜18-36 月龄</button>
+        </div>
+        <article class="output" id="persona-output" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section id="path">
+      <h2>用户真正购买的是哪一件事？</h2>
+      <p class="section-intro">在小红书，奶粉决策不是一次完成。用户先寻找“自己不慌”的理想状态，再代入真实喂养生活，最后才会用理性信息确认是否进入购买。</p>
+      <div class="path-lab">
+        <div class="control-stack">
+          <button class="path-btn is-active" type="button" data-path="ideal">第一阶段｜稳定成长、自己不慌</button>
+          <button class="path-btn" type="button" data-path="life">第二阶段｜真实喂养里用得上</button>
+          <button class="path-btn" type="button" data-path="certainty">第三阶段｜选得有依据、买得放心</button>
+        </div>
+        <article class="output" id="path-output" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section id="scenes">
+      <h2>三大内容场景：让内容接力用户决策</h2>
+      <p class="section-intro">这套内容体系不是反复发布同一种笔记，而是让前置教育、真实喂养和理性转化分别承担搜索、收藏、比较、咨询和购买确认的任务。</p>
+      <div class="story-board">
+        <div class="control-stack">
+          <button class="scene-btn is-active" type="button" data-scene="education">第一层｜选奶前置教育场</button>
+          <button class="scene-btn" type="button" data-scene="feeding">第二层｜真实喂养场景场</button>
+          <button class="scene-btn" type="button" data-scene="decision">第三层｜理性决策转化场</button>
+        </div>
+        <article class="output" id="scene-output" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section id="content-demo">
+      <h2>内容 Demo：把策略变成可发布笔记</h2>
+      <p class="section-intro">每一层内容都需要明确目标、标题钩子、卖点植入边界和互动承接方式。0-12 月龄相关内容坚持科学喂养教育与官方咨询导向，不做直接种草转化。</p>
+      <div class="demo-grid">
+        <article class="demo-card">
+          <figure class="demo-image demo-carousel" data-demo-index="0">
+            <img class="demo-slide is-active" src="assets/cover-gallery/trust-product-form.jpg" alt="选奶前置教育封面示例">
+            <img class="demo-slide" src="assets/cover-gallery/trust-science.jpg" alt="奶粉科学信息封面示例">
+            <img class="demo-slide" src="assets/cover-gallery/trust-evaluation.jpg" alt="奶粉信息核验封面示例">
+            <button class="demo-nav prev" type="button" aria-label="上一张">‹</button>
+            <button class="demo-nav next" type="button" aria-label="下一张">›</button>
+            <div class="demo-dots" aria-label="前置教育图片分页">
+              <button class="demo-dot is-active" type="button" aria-label="第 1 张"></button>
+              <button class="demo-dot" type="button" aria-label="第 2 张"></button>
+              <button class="demo-dot" type="button" aria-label="第 3 张"></button>
+            </div>
+            <figcaption class="label">前置教育 · 搜索收藏</figcaption>
+          </figure>
+          <div class="demo-body">
+            <p class="kicker">目标：点击率 / 收藏率 / 咨询入口</p>
+            <h3 class="demo-title">新手爸妈初次看奶粉，先别被成分表绕晕</h3>
+            <p class="demo-meta">从“看不懂奶粉罐”切入，把选择拆成月龄、产品名称、注册信息、官方渠道、客服咨询五个动作。</p>
+            <ul class="demo-list">
+              <li>钩子：真正卡住的不是买哪一罐，而是不知道先看哪里。</li>
+              <li>植入：以澳优为案例，展示如何核验产品与官方信息。</li>
+              <li>CTA：评论区留下月龄和选择阶段，领取选奶信息清单。</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="demo-card">
+          <figure class="demo-image demo-carousel" data-demo-index="0">
+            <img class="demo-slide is-active" src="assets/cover-gallery/click-still-real.jpg" alt="真实喂养家庭场景示例">
+            <img class="demo-slide" src="assets/cover-gallery/click-handheld.jpg" alt="手持奶粉生活场景示例">
+            <img class="demo-slide" src="assets/cover-gallery/click-baby-product.jpg" alt="宝宝产品生活场景示例">
+            <button class="demo-nav prev" type="button" aria-label="上一张">‹</button>
+            <button class="demo-nav next" type="button" aria-label="下一张">›</button>
+            <div class="demo-dots" aria-label="真实喂养图片分页">
+              <button class="demo-dot is-active" type="button" aria-label="第 1 张"></button>
+              <button class="demo-dot" type="button" aria-label="第 2 张"></button>
+              <button class="demo-dot" type="button" aria-label="第 3 张"></button>
+            </div>
+            <figcaption class="label">真实喂养 · 生活共鸣</figcaption>
+          </figure>
+          <div class="demo-body">
+            <p class="kicker">目标：分享率 / 信任感 / 真实讨论</p>
+            <h3 class="demo-title">有娃后才懂，奶粉区不是摆整齐就够了</h3>
+            <p class="demo-meta">从夜间喂养动线入手，讲奶粉、温水、量勺、记录表、客服卡片如何放置，减少家庭成员操作差异。</p>
+            <ul class="demo-list">
+              <li>钩子：晚上最怕的不是起夜，而是全家找东西、问步骤。</li>
+              <li>植入：出现澳优包装与官方冲调建议，不承诺成长结果。</li>
+              <li>CTA：收藏夜间喂养区清单，评论交流自家动线。</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="demo-card">
+          <figure class="demo-image demo-carousel" data-demo-index="0">
+            <img class="demo-slide is-active" src="assets/cover-gallery/convert-review.jpg" alt="理性购买核验内容示例">
+            <img class="demo-slide" src="assets/cover-gallery/convert-stockpile.jpg" alt="奶粉囤货清单内容示例">
+            <img class="demo-slide" src="assets/cover-gallery/convert-promo.png" alt="活动购买承接内容示例">
+            <button class="demo-nav prev" type="button" aria-label="上一张">‹</button>
+            <button class="demo-nav next" type="button" aria-label="下一张">›</button>
+            <div class="demo-dots" aria-label="理性转化图片分页">
+              <button class="demo-dot is-active" type="button" aria-label="第 1 张"></button>
+              <button class="demo-dot" type="button" aria-label="第 2 张"></button>
+              <button class="demo-dot" type="button" aria-label="第 3 张"></button>
+            </div>
+            <figcaption class="label">理性转化 · 购买确认</figcaption>
+          </figure>
+          <div class="demo-body">
+            <p class="kicker">目标：咨询 / 加购 / 官方承接</p>
+            <h3 class="demo-title">准备买奶粉前，我会再确认这 5 件事</h3>
+            <p class="demo-meta">从下单前核验清单切入，覆盖月龄段、产品线、官方渠道、包装信息、客服确认。</p>
+            <ul class="demo-list">
+              <li>钩子：越接近购买，越要把信息核清楚。</li>
+              <li>植入：以官方旗舰店、品牌号、产品包装信息为核心触点。</li>
+              <li>CTA：领取下单前核验清单，承接到客服和官方店铺。</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="matrix">
+      <h2>达人矩阵策略</h2>
+      <p class="section-intro">达人不是按粉丝量简单分层，而是按用户决策阶段分工。核心原则是账号人设、宝宝月龄、内容任务和合规边界同时匹配。</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>达人类型</th>
+              <th>主要角色</th>
+              <th>适合内容</th>
+              <th>筛选标准</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>母婴科普型达人</td>
+              <td>前置教育和搜索承接</td>
+              <td>月龄选择逻辑、奶粉信息阅读、转段转奶准备、喂养问题咨询边界。</td>
+              <td>表达克制、信息来源清楚、评论答疑不越界、历史内容无高风险功效承诺。</td>
+            </tr>
+            <tr>
+              <td>真实育儿 KOC</td>
+              <td>生活场景渗透和信任共鸣</td>
+              <td>夜间喂养、外出携带、家庭分工、转段记录、奶粉区收纳。</td>
+              <td>生活感强、广告痕迹弱、宝宝月龄匹配、评论区有真实同龄家庭讨论。</td>
+            </tr>
+            <tr>
+              <td>育儿消费决策达人</td>
+              <td>理性转化和购买确认</td>
+              <td>下单前核验清单、官方渠道购买提示、产品线差异提问、活动期购买标准。</td>
+              <td>擅长表格/清单/测评表达，能把“怎么买更稳”说清楚，不只堆优惠。</td>
+            </tr>
+            <tr>
+              <td>品牌号与客服承接</td>
+              <td>统一口径和官方信任入口</td>
+              <td>评论区答疑、私信清单、产品信息核验、官方店铺与客服导流。</td>
+              <td>回复及时、合规口径稳定、能沉淀高频问题，形成下一轮选题。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="selector">
+      <h2>选号机制：找到能承担任务的账号</h2>
+      <p class="section-intro">选号目标不是找到“看起来流量大”的账号，而是找到真实、匹配、效率可控且合作风险低的账号。</p>
+      <div class="selector-grid">
+        <article class="selector-card">
+          <div class="step-num">01</div>
+          <h3>人群匹配</h3>
+          <p>确认宝宝月龄、家庭阶段、账号内容是否对应新手准备、喂养磨合或成长规划。</p>
+        </article>
+        <article class="selector-card">
+          <div class="step-num">02</div>
+          <h3>内容匹配</h3>
+          <p>判断账号是否擅长清单、记录、测评、生活场景或购买攻略，而不是只看粉丝量。</p>
+        </article>
+        <article class="selector-card">
+          <div class="step-num">03</div>
+          <h3>互动质量</h3>
+          <p>看评论是否有同龄家庭提问、是否引发收藏咨询、是否存在异常刷量痕迹。</p>
+        </article>
+        <article class="selector-card">
+          <div class="step-num">04</div>
+          <h3>合作风险</h3>
+          <p>核对排竞、置顶、素材授权、报价结构、服务费和合规脚本审核接受度。</p>
+        </article>
+      </div>
+      <p class="footnote">提报字段建议包含：种草类型、达人量级、宝宝月龄、互动率、排竞、置顶、素材授权、含服务费报价。</p>
+    </section>
+
+    <section id="iteration">
+      <h2>内容数据与迭代优化</h2>
+      <p class="section-intro">这套内容体系不是一次性投放，而是持续迭代。优化逻辑很简单：用户缺什么判断依据，内容就补什么资产。</p>
+      <div class="metric-row">
+        <article class="metric-block">
+          <p class="kicker">前置教育</p>
+          <h3>看收藏率与评论问题</h3>
+          <p>如果用户频繁问“我家月龄怎么看”，补月龄对照表、选奶清单和官方客服问题模板。</p>
+        </article>
+        <article class="metric-block">
+          <p class="kicker">真实喂养</p>
+          <h3>看分享率与生活共鸣</h3>
+          <p>如果场景共鸣强但咨询弱，补冲调流程、夜间动线、转段记录和家庭分工模板。</p>
+        </article>
+        <article class="metric-block">
+          <p class="kicker">理性转化</p>
+          <h3>看私信咨询与加购动作</h3>
+          <p>如果用户接近购买仍犹豫，补官方渠道核验、产品线问法、囤货标准和活动期清单。</p>
+        </article>
+      </div>
+      <div class="script-box"><strong>最终收口：</strong>澳优在小红书上不应只被定义为一罐奶粉，而要成为新手父母选奶过程里的信息整理者、真实场景陪伴者和理性决策证据提供者。真正有效的内容，不是把澳优讲得更响，而是把父母的选择过程讲得更清楚。</div>
+    </section>
+
+    <section class="ending" id="ending">
+      <div class="ending-layout">
+        <div class="ending-copy">
+          <p class="kicker">Final Thought</p>
+          <h2>谁先帮父母理清问题，谁就更有机会被认真考虑。</h2>
+          <p class="lead">奶粉赛道的小红书竞争，表面看是品牌、配方、达人资源的竞争，本质上是用户决策路径的竞争。</p>
+        </div>
+        <figure class="ending-image">
+          <img src="assets/澳优 logo 2.png" alt="澳优 logo">
+        </figure>
+      </div>
+    </section>
+
+    <section id="appendix">
+      <h2>附录：数据来源与研究方法</h2>
+      <p class="section-intro">本次竞品分析基于小红书平台内容数据开展，统计周期覆盖 2025 年 6 月 1 日至 2026 年 6 月 1 日。研究采用「品牌关键词检索 + 达人信息匹配」的数据采集方式，以“奶粉 + 品牌词”作为核心检索口径，覆盖爱他美、飞鹤、君乐宝、美素佳儿、A2、至初、合生元、启赋、美赞臣等核心品牌。</p>
+      <div class="appendix-layout">
+        <div>
+          <div class="flow-chart" aria-label="数据处理流程图">
+            <div class="flow-step">
+              <span class="flow-num">1</span>
+              <div>
+                <h3>品牌关键词检索</h3>
+                <p>以“奶粉 + 品牌词”为核心口径，采集小红书主贴数据。</p>
+              </div>
+            </div>
+            <div class="flow-step">
+              <span class="flow-num">2</span>
+              <div>
+                <h3>内容 / 品牌打标</h3>
+                <p>通过 GPT 规则完成内容形态与品牌归一标注。</p>
+              </div>
+            </div>
+            <div class="flow-step">
+              <span class="flow-num">3</span>
+              <div>
+                <h3>蒲公英达人匹配</h3>
+                <p>关联蒲公英平台达人信息，校准账号与粉丝层级。</p>
+              </div>
+            </div>
+            <div class="flow-step">
+              <span class="flow-num">4</span>
+              <div>
+                <h3>去重清洗</h3>
+                <p>筛选粉丝量大于 200 的博主内容，处理重复与异常值。</p>
+              </div>
+            </div>
+            <div class="flow-step">
+              <span class="flow-num">5</span>
+              <div>
+                <h3>统计分析</h3>
+                <p>按品牌、粉丝层级和内容形态计算占比，形成竞品洞察。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="appendix-note">
+            <strong>附件辅助说明：</strong>底层数据表为 <code>post_gpt_tags_pgy_price</code>；数据链路为小红书主贴数据 → GPT 规则完成内容形态与品牌打标 → 关联蒲公英达人信息；主要分析字段包括品牌归一、内容形态、达人粉丝数、蒲公英达人匹配状态。
+          </div>
+        </div>
+
+        <aside class="appendix-metrics" aria-label="研究口径关键数字">
+          <div class="appendix-metric">
+            <strong>2025.06.01-2026.06.01</strong>
+            <span>统计周期覆盖 12 个月内容数据</span>
+          </div>
+          <div class="appendix-metric">
+            <strong>22 个品牌</strong>
+            <span>纳入奶粉核心竞品及相关品牌进行分析</span>
+          </div>
+          <div class="appendix-metric">
+            <strong>137,897 条</strong>
+            <span>去重、清洗及异常值处理后的有效内容样本</span>
+          </div>
+          <div class="insight-callout">
+            <p>除特殊说明外，下文所涉及百分比数据，均基于“同一品牌 × 同一粉丝层级”口径计算内容形态占比。</p>
+          </div>
+        </aside>
+      </div>
+      <div class="table-wrap" style="margin-top:14px">
+        <table>
+          <thead>
+            <tr>
+              <th>content_category 取值</th>
+              <th>含义概要</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>待产包/孕期</td>
+              <td>待产包、孕晚期、月子中心、第一口奶等</td>
+            </tr>
+            <tr>
+              <td>品牌活动/线下活动</td>
+              <td>妈妈班、星妈会、研学、沙龙、线下报名等</td>
+            </tr>
+            <tr>
+              <td>补贴促销/门店导购</td>
+              <td>育儿补贴、领奶粉、新客、顾问、优惠券等</td>
+            </tr>
+            <tr>
+              <td>购物晒单/囤货</td>
+              <td>囤货、晒单、香港购物、开箱等</td>
+            </tr>
+            <tr>
+              <td>敏感肠胃/特殊需求</td>
+              <td>敏宝、水解、过敏、玻璃胃等</td>
+            </tr>
+            <tr>
+              <td>羊奶粉</td>
+              <td>羊乳、羊奶粉品类及相关品牌词</td>
+            </tr>
+            <tr>
+              <td>有机奶粉</td>
+              <td>有机认证、有机牧场等</td>
+            </tr>
+            <tr>
+              <td>HMO奶粉</td>
+              <td>HMO、母乳低聚糖相关</td>
+            </tr>
+            <tr>
+              <td>A2奶粉</td>
+              <td>A2 蛋白赛道（与品牌 a2 可并存）</td>
+            </tr>
+            <tr>
+              <td>长肉追高</td>
+              <td>追肉、追高、儿保、体重等</td>
+            </tr>
+            <tr>
+              <td>自护力/免疫力</td>
+              <td>自护力、乳铁蛋白（非测评语境）等</td>
+            </tr>
+            <tr>
+              <td>奶粉测评/对比</td>
+              <td>测评、横评、PK、选奶攻略等</td>
+            </tr>
+            <tr>
+              <td>选奶求助/推荐</td>
+              <td>求推荐、好纠结、选哪个等</td>
+            </tr>
+            <tr>
+              <td>单品种草/使用反馈</td>
+              <td>种草、空瓶、回购、亲测等</td>
+            </tr>
+            <tr>
+              <td>育儿生活场景</td>
+              <td>幼儿园、露营、遛娃、成长记录等</td>
+            </tr>
+            <tr>
+              <td>喂养知识/科普</td>
+              <td>转奶、冲泡、水奶、喂奶科普等</td>
+            </tr>
+            <tr>
+              <td>其他</td>
+              <td>未命中以上规则</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="footnote">这一页作为附录，主要用于说明本方案中的竞品判断和百分比数据来自统一口径的数据清洗与达人匹配，不是单篇笔记观察或主观抽样。</p>
+    </section>
+
+    <section id="cover-appendix">
+      <h2>附录 2：高转化封面形式策略结构</h2>
+      <p class="section-intro">高转化封面形式资产库不是素材堆放，而是把被验证过的封面经验归入用户决策路径。封面先回答用户为什么愿意点进来，正文再回答用户如何理解，评论和私信承接用户如何继续决策。</p>
+
+      <div class="cover-strategy-grid">
+        <article class="cover-card">
+          <figure>
+            <img src="assets/cover-gallery/click-baby-product.jpg" alt="点击进入型封面样张">
+          </figure>
+          <div class="cover-card-body">
+            <p class="kicker">Click · 点击进入型</p>
+            <h3>降低第一眼判断成本</h3>
+            <p>用户刷到奶粉内容时，第一反应往往不是“这个产品有什么卖点”，而是“这是不是一条真实、有用、和我有关的内容”。</p>
+            <div class="tag-row">
+              <span class="tag">真实家庭场景</span>
+              <span class="tag">产品一眼识别</span>
+              <span class="tag">弱广告感</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="cover-card">
+          <figure>
+            <img src="assets/cover-gallery/trust-science.jpg" alt="信任建立型封面样张">
+          </figure>
+          <div class="cover-card-body">
+            <p class="kicker">Trust · 信任建立型</p>
+            <h3>让内容看起来有结构、有依据</h3>
+            <p>信任建立型封面要强化信息可读和判断有据，让用户第一眼知道：这条笔记可以收藏，也可以转发给家人一起看。</p>
+            <div class="tag-row">
+              <span class="tag">科普图</span>
+              <span class="tag">测评图</span>
+              <span class="tag">清单化判断</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="cover-card">
+          <figure>
+            <img src="assets/cover-gallery/convert-stockpile.jpg" alt="转化临门型封面样张">
+          </figure>
+          <div class="cover-card-body">
+            <p class="kicker">Convert · 转化临门型</p>
+            <h3>给出下单前最后一轮确认</h3>
+            <p>转化临门型封面不能只做产品展示，而要给出明确行动线索。用户不是被催着下单，而是被帮助完成购买前确认。</p>
+            <div class="tag-row">
+              <span class="tag">囤货图</span>
+              <span class="tag">大字报图</span>
+              <span class="tag">活动承接</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="cover-gallery-strip" aria-label="高转化封面代表样张">
+        <figure><img src="assets/cover-gallery/click-handheld.jpg" alt="手持产品真实喂养场景封面样张"></figure>
+        <figure><img src="assets/cover-gallery/trust-evaluation.jpg" alt="测评型高密度信息图样张"></figure>
+        <figure><img src="assets/cover-gallery/convert-promo.png" alt="大促信息拼图封面样张"></figure>
+        <figure><img src="assets/cover-gallery/convert-review.jpg" alt="购物好评截图封面样张"></figure>
+      </div>
+
+      <div class="table-wrap" style="margin-top:14px">
+        <table>
+          <thead>
+            <tr>
+              <th>内容任务</th>
+              <th>优先封面形式</th>
+              <th>适配达人类型</th>
+              <th>转化目标</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>前置教育 / 搜索进入</td>
+              <td>科普清单、产品及宝宝场景、手持产品图</td>
+              <td>母婴科普达人、孕产生活方式博主、真实育儿 KOC</td>
+              <td>点击率、收藏率、评论提问</td>
+            </tr>
+            <tr>
+              <td>信任建立 / 候选清单</td>
+              <td>测评图、产品形态图、截图背景拼图</td>
+              <td>中高粉测评达人、育儿消费决策达人</td>
+              <td>收藏率、转发给家人、私信咨询</td>
+            </tr>
+            <tr>
+              <td>购买确认 / 转化承接</td>
+              <td>产品囤货图、大字报图、大促信息拼图、购物好评截图</td>
+              <td>低粉 KOC、素人号、品牌号与客服承接</td>
+              <td>下单前核验、活动咨询、加购转化</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="script-box"><strong>Brief 机制：</strong>每条笔记需同时明确选题方向、封面形式、达人类型与转化目标。封面不承担功效证明，承担决策入口；不夸大功效，不制造焦虑，用真实、清楚、可行动的封面，帮助用户愿意点进来、看下去、问出来。</div>
+    </section>
+
+    <footer class="footer">澳优婴幼儿奶粉小红书营销策略方案 · HTML proposal format</footer>
+  </main>
+
+  <script>
+    const render = (target, data) => {
+      target.classList.toggle("has-media", Boolean(data.image));
+      target.innerHTML = `
+        <div class="output-copy">
+          <p class="kicker">${data.kicker}</p>
+          <h3>${data.title}</h3>
+          <p>${data.copy}</p>
+          <div class="tag-row">${data.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>
+          ${data.script ? `<div class="script-box">${data.script}</div>` : ""}
+        </div>
+        ${data.image ? `<figure class="output-media"><img src="${data.image}" alt="${data.imageAlt || data.title}"></figure>` : ""}
+      `;
+    };
+
+    const pathData = {
+      ideal: {
+        kicker: "Stage 1 · 理想状态",
+        title: "用户购买“稳定成长、自己不慌”的确定感",
+        copy: "在搜索最前端，用户不是先看品牌，而是在寻找月龄节奏、选奶清单、新手父母经验、家庭沟通和官方渠道等基础判断框架。",
+        tags: ["月龄节奏", "选奶清单", "家庭沟通", "喂养准备", "官方渠道"],
+        script: "内容不要急着替用户下结论，而要先帮她把选择动作拆清楚：先看懂，再决定。",
+        image: "assets/cover-gallery/trust-science.jpg",
+        imageAlt: "科学喂养教育内容示例"
+      },
+      life: {
+        kicker: "Stage 2 · 真实体验",
+        title: "用户购买“真实喂养生活里能用得上”的体验感",
+        copy: "进入第二阶段，用户开始把奶粉放进真实生活里想象：夜间冲调、外出携带、宝爸和长辈能不能照着流程操作、转奶转段有没有记录。",
+        tags: ["冲调流程", "夜间喂养", "外出携带", "转奶记录", "家庭分工"],
+        script: "小红书上的信任，往往来自“这就是我家会遇到的场景”。",
+        image: "assets/cover-gallery/click-handheld.jpg",
+        imageAlt: "真实喂养生活场景示例"
+      },
+      certainty: {
+        kicker: "Stage 3 · 理性确认",
+        title: "用户购买“选得有依据、买得放心”的确定性",
+        copy: "到了理性决策阶段，用户需要的不是更多情绪，而是适用月龄、产品信息核验、官方旗舰店、客服咨询、正品渠道和购买清单。",
+        tags: ["适用月龄", "信息核验", "官方旗舰店", "客服咨询", "购买清单"],
+        script: "不是一句“放心选”，而是把为什么可以进一步咨询、为什么可以加入备选、为什么可以去官方渠道确认讲清楚。",
+        image: "assets/cover-gallery/convert-review.jpg",
+        imageAlt: "下单前核验清单示例"
+      }
+    };
+
+    const personaData = {
+      starter: {
+        kicker: "新手安心派",
+        title: "核心心理：怕准备太晚，也怕被碎片信息带着走",
+        copy: "孕晚期、新手爸妈、0-6 月龄家庭，信息摄入量大但判断标准不稳定。她们需要基础知识、月龄逻辑、官方信息入口和可咨询的边界。",
+        tags: ["孕晚期", "0-6 月龄", "基础知识", "官方咨询", "先看懂再决定"],
+        script: "建议表达：把选择拆成步骤，给新手家庭一份喂养信息整理。避免直接催促购买、制造焦虑或夸大成分作用。",
+        image: "assets/cover-gallery/click-still-real.jpg",
+        imageAlt: "新手安心派家庭场景"
+      },
+      routine: {
+        kicker: "喂养磨合派",
+        title: "核心心理：我家能不能顺利执行",
+        copy: "6-18 月龄家庭开始经历转段、转奶、辅食衔接、外出喂养等复杂场景。她们既看产品信息，也看其他家庭的真实经验。",
+        tags: ["6-18 月龄", "转段转奶", "外出喂养", "家庭协作", "记录替代猜测"],
+        script: "内容任务是把喂养流程拍具体，把家庭分工讲清楚，把转奶和转段变成可记录、可复盘的动作。",
+        image: "assets/cover-gallery/click-baby-product.jpg",
+        imageAlt: "喂养磨合派家庭场景"
+      },
+      planner: {
+        kicker: "成长规划派",
+        title: "核心心理：长期选择要稳定，也要买得明白",
+        copy: "18-36 月龄家庭对产品线、价格带、囤货节奏、家庭长期选择更敏感。转化意愿较高，但也更重视渠道稳定和家庭标准一致。",
+        tags: ["18-36 月龄", "产品线", "预算", "囤货节奏", "家庭购买标准"],
+        script: "建议表达：把奶粉从临时购买变成家庭计划，按月龄、渠道、预算三项做选择，官方渠道信息优先核验。",
+        image: "assets/cover-gallery/convert-stockpile.jpg",
+        imageAlt: "成长规划派购买规划场景"
+      }
+    };
+
+    const sceneData = {
+      education: {
+        kicker: "Layer 1 · 选奶前置教育场",
+        title: "先帮用户看懂，再让用户考虑澳优",
+        copy: "让澳优更早进入孕晚期、新手父母、0-12 月龄家庭的搜索路径。内容定位是不卖焦虑、不抢结论，先帮用户建立选奶框架。",
+        tags: ["月龄选择逻辑", "信息核验清单", "转段准备", "家庭沟通表", "品牌号/科普达人"],
+        script: "示例选题：《孕晚期选奶粉，先做这张家庭沟通表》《0-36 月龄奶粉选择逻辑，不同阶段看重点》。",
+        image: "assets/cover-gallery/trust-product-form.jpg",
+        imageAlt: "选奶前置教育内容示例"
+      },
+      feeding: {
+        kicker: "Layer 2 · 真实喂养场景场",
+        title: "让用户看到澳优如何进入真实家庭生活",
+        copy: "把冲调、转奶、转段、外出、夜间、长辈沟通这些具体场景拍出来，让奶粉从货架上的一罐产品进入家庭日常。",
+        tags: ["夜间喂养", "外出半天", "宝爸参与", "长辈帮带", "生活记录 KOC"],
+        script: "示例选题：《宝爸也能照着做的冲奶步骤贴》《长辈帮带娃，奶粉信息怎么写才不会乱》。",
+        image: "assets/cover-gallery/click-multi-product.jpg",
+        imageAlt: "真实喂养场景内容示例"
+      },
+      decision: {
+        kicker: "Layer 3 · 理性决策转化场",
+        title: "把“为什么进入备选”和“怎么买更稳”讲清楚",
+        copy: "承接已经进入品牌对比和购买准备的用户，用确定信息降低决策成本，包括月龄段、产品线、官方渠道、包装信息和客服确认。",
+        tags: ["下单前清单", "产品线提问", "官方渠道", "活动期核验", "消费决策达人"],
+        script: "示例选题：《同品牌不同产品线，问客服时别只问价格》《奶粉囤货前，先确认月龄、渠道和保质期》。",
+        image: "assets/cover-gallery/convert-text-poster.jpg",
+        imageAlt: "理性决策转化内容示例"
+      }
+    };
+
+    const initInteractive = (selector, outputSelector, dataSet, defaultKey) => {
+      const output = document.querySelector(outputSelector);
+      render(output, dataSet[defaultKey]);
+      document.querySelectorAll(selector).forEach((button) => {
+        button.addEventListener("click", () => {
+          document.querySelectorAll(selector).forEach((item) => item.classList.remove("is-active"));
+          button.classList.add("is-active");
+          const key = button.dataset.path || button.dataset.persona || button.dataset.scene;
+          render(output, dataSet[key]);
+        });
+      });
+    };
+
+    initInteractive(".path-btn", "#path-output", pathData, "ideal");
+    initInteractive(".persona-btn", "#persona-output", personaData, "starter");
+    initInteractive(".scene-btn", "#scene-output", sceneData, "education");
+
+    document.querySelectorAll(".demo-carousel").forEach((carousel) => {
+      const slides = Array.from(carousel.querySelectorAll(".demo-slide"));
+      const dots = Array.from(carousel.querySelectorAll(".demo-dot"));
+      const setSlide = (nextIndex) => {
+        const index = (nextIndex + slides.length) % slides.length;
+        carousel.dataset.demoIndex = String(index);
+        slides.forEach((slide, slideIndex) => {
+          slide.classList.toggle("is-active", slideIndex === index);
+        });
+        dots.forEach((dot, dotIndex) => {
+          dot.classList.toggle("is-active", dotIndex === index);
+        });
+      };
+
+      carousel.querySelector(".demo-nav.prev").addEventListener("click", () => {
+        setSlide(Number(carousel.dataset.demoIndex || 0) - 1);
+      });
+
+      carousel.querySelector(".demo-nav.next").addEventListener("click", () => {
+        setSlide(Number(carousel.dataset.demoIndex || 0) + 1);
+      });
+
+      dots.forEach((dot, dotIndex) => {
+        dot.addEventListener("click", () => {
+          setSlide(dotIndex);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

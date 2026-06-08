@@ -1,0 +1,2455 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>澳优婴幼儿奶粉小红书营销策略方案</title>
+  <style>
+    :root {
+      --bg: #f7f8f5;
+      --paper: #ffffff;
+      --ink: #202523;
+      --muted: #66726e;
+      --line: #dfe6e1;
+      --red: #c73535;
+      --red-soft: #f5dfdf;
+      --green: #2f7d68;
+      --green-soft: #dceee8;
+      --gold: #a96f2d;
+      --gold-soft: #f3e4cf;
+      --blue: #3a6c8f;
+      --blue-soft: #dfeaf1;
+      --shadow: 0 18px 46px rgba(32, 37, 35, 0.10);
+      --radius: 8px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      line-height: 1.65;
+      letter-spacing: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      border-bottom: 1px solid rgba(223, 230, 225, 0.9);
+      background: rgba(247, 248, 245, 0.94);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 180px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .brand-logo {
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      border-radius: 6px;
+      padding: 3px;
+      object-fit: contain;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: flex-end;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      padding: 7px 10px;
+      color: var(--muted);
+      border-radius: 6px;
+      font-size: 13px;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    .hero {
+      max-width: var(--max);
+      margin: 0 auto;
+      min-height: calc(100svh - 58px);
+      padding: 52px 20px 34px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(340px, 0.86fr);
+      gap: 44px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--red);
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 820px;
+      margin-bottom: 20px;
+      font-size: clamp(38px, 6vw, 74px);
+      line-height: 1.03;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 720px;
+      color: #47504d;
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 26px;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 42px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 16px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      background: var(--ink);
+      color: #fff;
+      font-weight: 800;
+    }
+
+    .button.secondary {
+      background: var(--paper);
+      color: var(--ink);
+      border-color: var(--line);
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      max-width: 680px;
+    }
+
+    .meta {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+      border-radius: var(--radius);
+      padding: 12px;
+    }
+
+    .meta strong {
+      display: block;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    .meta span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 560px;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      gap: 14px;
+    }
+
+    .hero-image {
+      overflow: hidden;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      min-height: 450px;
+      background: #e8ebe7;
+    }
+
+    .hero-panel {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .mini-panel {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+    }
+
+    .mini-panel b {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .mini-panel span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    section {
+      padding: 72px 20px;
+    }
+
+    .section-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(280px, 0.42fr);
+      gap: 32px;
+      align-items: end;
+      margin-bottom: 28px;
+    }
+
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--red);
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin-bottom: 0;
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    .section-note {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      padding: 22px;
+      box-shadow: 0 8px 22px rgba(32, 37, 35, 0.045);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    .card p,
+    .card li {
+      color: #4c5753;
+    }
+
+    .card ul {
+      margin: 12px 0 0;
+      padding-left: 18px;
+    }
+
+    .truth {
+      background: var(--paper);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .truth-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.86fr) minmax(360px, 1fr);
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .big-quote {
+      padding: 32px;
+      background: var(--ink);
+      color: #fff;
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 360px;
+    }
+
+    .big-quote p {
+      color: rgba(255, 255, 255, 0.78);
+      margin-bottom: 0;
+    }
+
+    .big-quote .quote-title {
+      font-size: clamp(34px, 4vw, 56px);
+      line-height: 1.08;
+      font-weight: 900;
+    }
+
+    .truth-image {
+      overflow: hidden;
+      border-radius: var(--radius);
+      min-height: 360px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .tab-button {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--muted);
+      border-radius: 6px;
+      padding: 10px 14px;
+      cursor: pointer;
+      font-weight: 800;
+    }
+
+    .tab-button.is-active {
+      color: #fff;
+      background: var(--red);
+      border-color: var(--red);
+    }
+
+    .tab-panel {
+      display: none;
+    }
+
+    .tab-panel.is-active {
+      display: block;
+    }
+
+    .path-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 0.68fr) minmax(330px, 0.32fr);
+      gap: 16px;
+    }
+
+    .path-stage {
+      min-height: 340px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+
+    .path-stage h3 {
+      font-size: 30px;
+      margin-bottom: 14px;
+      line-height: 1.15;
+    }
+
+    .path-stage .tag-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 5px 9px;
+      border-radius: 6px;
+      background: var(--green-soft);
+      color: #225b4c;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .side-image {
+      overflow: hidden;
+      border-radius: var(--radius);
+      min-height: 340px;
+    }
+
+    .data-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .data-card {
+      padding: 22px;
+      border-radius: var(--radius);
+      color: #fff;
+      background: var(--ink);
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .data-card:nth-child(2) {
+      background: var(--green);
+    }
+
+    .data-card:nth-child(3) {
+      background: var(--blue);
+    }
+
+    .data-card h3 {
+      font-size: 23px;
+      margin-bottom: 16px;
+    }
+
+    .data-card .metric {
+      font-size: 38px;
+      font-weight: 900;
+      line-height: 1;
+      margin: 6px 0;
+    }
+
+    .data-card small {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 12px;
+    }
+
+    .footnote {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .model {
+      display: grid;
+      grid-template-columns: minmax(0, 0.46fr) minmax(0, 0.54fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .ladder {
+      display: grid;
+      gap: 12px;
+    }
+
+    .ladder-step {
+      border-radius: var(--radius);
+      padding: 20px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .ladder-step:nth-child(1) {
+      border-left: 8px solid var(--green);
+    }
+
+    .ladder-step:nth-child(2) {
+      border-left: 8px solid var(--gold);
+    }
+
+    .ladder-step:nth-child(3) {
+      border-left: 8px solid var(--red);
+    }
+
+    .image-stack {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      min-height: 440px;
+    }
+
+    .image-stack .tall {
+      grid-row: span 2;
+    }
+
+    .image-stack figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: var(--radius);
+      min-height: 210px;
+      background: #e9ece8;
+    }
+
+    .persona-card {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .persona-image {
+      height: 210px;
+      background: #e9ece8;
+    }
+
+    .persona-copy {
+      padding: 20px;
+    }
+
+    .persona-copy b {
+      color: var(--red);
+    }
+
+    .scene-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.44fr) minmax(0, 0.56fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .scene-menu {
+      display: grid;
+      gap: 10px;
+    }
+
+    .scene-button {
+      text-align: left;
+      cursor: pointer;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      border-radius: var(--radius);
+      padding: 18px;
+    }
+
+    .scene-button.is-active {
+      border-color: var(--red);
+      box-shadow: 0 0 0 3px rgba(199, 53, 53, 0.12);
+    }
+
+    .scene-button b {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 17px;
+    }
+
+    .scene-button span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .scene-detail {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .scene-image {
+      height: 300px;
+      background: #e9ece8;
+    }
+
+    .scene-copy {
+      padding: 22px;
+    }
+
+    .scene-copy h3 {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .topic-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .topic {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .matrix {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: var(--paper);
+      border: 1px solid var(--line);
+    }
+
+    .matrix th,
+    .matrix td {
+      padding: 15px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .matrix th {
+      background: var(--ink);
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .matrix tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .selector {
+      background: var(--paper);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .funnel {
+      display: grid;
+      grid-template-columns: minmax(0, 0.62fr) minmax(300px, 0.38fr);
+      gap: 18px;
+    }
+
+    .funnel-steps {
+      display: grid;
+      gap: 10px;
+    }
+
+    .funnel-step {
+      display: grid;
+      grid-template-columns: 52px minmax(0, 1fr);
+      gap: 14px;
+      align-items: start;
+      padding: 18px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      border-radius: var(--radius);
+    }
+
+    .step-num {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 6px;
+      background: var(--green);
+      color: #fff;
+      font-weight: 900;
+    }
+
+    .funnel-step:nth-child(2) .step-num {
+      background: var(--blue);
+    }
+
+    .funnel-step:nth-child(3) .step-num {
+      background: var(--gold);
+    }
+
+    .funnel-step:nth-child(4) .step-num {
+      background: var(--red);
+    }
+
+    .danger {
+      border: 1px solid #e7bcbc;
+      background: #fff7f7;
+      border-radius: var(--radius);
+      padding: 22px;
+    }
+
+    .danger h3 {
+      color: var(--red);
+    }
+
+    .danger ul {
+      margin: 0;
+      padding-left: 18px;
+      color: #5a3939;
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .metric-block {
+      border-radius: var(--radius);
+      padding: 22px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+    }
+
+    .metric-block h3 {
+      margin-bottom: 12px;
+    }
+
+    .metric-block li {
+      margin-bottom: 5px;
+    }
+
+    .ending {
+      background: var(--ink);
+      color: #fff;
+    }
+
+    .ending .section-note,
+    .ending p {
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .ending-layout {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 0.64fr) minmax(320px, 0.36fr);
+      gap: 28px;
+      align-items: center;
+    }
+
+    .ending h2 {
+      font-size: clamp(34px, 5vw, 64px);
+    }
+
+    .ending-image {
+      min-height: 420px;
+      overflow: hidden;
+      border-radius: var(--radius);
+    }
+
+    .appendix-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .appendix-item {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      border-radius: var(--radius);
+      padding: 18px;
+    }
+
+    .appendix-item b {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      padding: 22px 20px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    /* 16:9 proposal deck layout */
+    @media (min-width: 921px) {
+      body {
+        font-size: 15px;
+        line-height: 1.52;
+      }
+
+      .topbar {
+        position: sticky;
+      }
+
+      .nav {
+        max-width: 1360px;
+        padding: 10px 22px;
+      }
+
+      .nav-links a {
+        padding: 5px 8px;
+        font-size: 12px;
+      }
+
+      main {
+        padding: 26px 0;
+      }
+
+      .hero,
+      .section-inner,
+      .ending-layout {
+        width: min(1360px, calc(100vw - 52px), calc((100svh - 92px) * 16 / 9));
+        max-width: none;
+        aspect-ratio: 16 / 9;
+        height: auto;
+        max-height: calc(100svh - 92px);
+        min-height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.78);
+        box-shadow: 0 18px 46px rgba(32, 37, 35, 0.08);
+      }
+
+      .hero {
+        padding: clamp(30px, 4.2vw, 56px);
+        grid-template-columns: minmax(0, 1fr) minmax(260px, 0.42fr);
+        gap: clamp(22px, 3vw, 42px);
+      }
+
+      section {
+        padding: 26px 20px;
+        min-height: calc(100svh - 40px);
+        display: grid;
+        align-items: center;
+      }
+
+      .section-inner,
+      .ending-layout {
+        padding: clamp(24px, 3vw, 42px);
+        display: grid;
+        align-content: center;
+      }
+
+      .truth .section-inner,
+      .selector .section-inner,
+      .ending-layout {
+        background: var(--paper);
+      }
+
+      .ending-layout {
+        background: transparent;
+        border-color: rgba(255, 255, 255, 0.18);
+      }
+
+      .section-head {
+        grid-template-columns: minmax(0, 0.78fr) minmax(240px, 0.34fr);
+        gap: clamp(16px, 2vw, 28px);
+        margin-bottom: clamp(14px, 1.8vw, 24px);
+      }
+
+      h1 {
+        font-size: clamp(42px, 4.5vw, 66px);
+        line-height: 1.04;
+        margin-bottom: 16px;
+      }
+
+      h2 {
+        font-size: clamp(28px, 3.2vw, 44px);
+        line-height: 1.12;
+      }
+
+      .ending h2 {
+        font-size: clamp(34px, 4vw, 58px);
+      }
+
+      h3 {
+        line-height: 1.2;
+      }
+
+      p,
+      li,
+      .section-note {
+        font-size: clamp(13px, 1.05vw, 16px);
+      }
+
+      .lead {
+        font-size: clamp(16px, 1.3vw, 19px);
+        margin-bottom: 18px;
+      }
+
+      .eyebrow,
+      .kicker {
+        margin-bottom: 8px;
+        font-size: 12px;
+      }
+
+      .card,
+      .metric-block,
+      .appendix-item,
+      .scene-button,
+      .funnel-step {
+        padding: clamp(14px, 1.5vw, 20px);
+      }
+
+      .card h3,
+      .metric-block h3,
+      .ladder-step h3,
+      .funnel-step h3 {
+        font-size: clamp(17px, 1.5vw, 22px);
+        margin-bottom: 8px;
+      }
+
+      .card p,
+      .card ul,
+      .metric-block ul,
+      .funnel-step p,
+      .ladder-step p,
+      .appendix-item span {
+        margin-bottom: 0;
+      }
+
+      .hero-visual {
+        min-height: 0;
+        grid-template-rows: minmax(0, 1fr) auto;
+        align-self: center;
+      }
+
+      .hero-image,
+      .truth-image,
+      .side-image,
+      .persona-image,
+      .scene-image,
+      .ending-image {
+        aspect-ratio: 3 / 4;
+        min-height: 0;
+        height: auto;
+      }
+
+      .hero-image {
+        max-height: 540px;
+        align-self: center;
+      }
+
+      .truth-layout {
+        grid-template-columns: minmax(0, 1fr) minmax(240px, 0.38fr);
+        gap: clamp(14px, 1.8vw, 22px);
+      }
+
+      .big-quote {
+        min-height: auto;
+        padding: clamp(22px, 2.4vw, 32px);
+      }
+
+      .big-quote .quote-title {
+        font-size: clamp(32px, 3.5vw, 52px);
+      }
+
+      .grid-3,
+      .grid-2,
+      .data-grid,
+      .metric-row {
+        gap: clamp(10px, 1.3vw, 16px);
+      }
+
+      .path-panel {
+        grid-template-columns: minmax(0, 1fr) minmax(210px, 0.28fr);
+      }
+
+      .path-stage {
+        min-height: auto;
+        padding: clamp(20px, 2.1vw, 28px);
+      }
+
+      .path-stage h3,
+      .scene-copy h3 {
+        font-size: clamp(23px, 2.4vw, 32px);
+      }
+
+      .data-card {
+        min-height: 0;
+        padding: clamp(18px, 2vw, 24px);
+      }
+
+      .data-card h3 {
+        font-size: clamp(19px, 1.8vw, 25px);
+      }
+
+      .data-card .metric {
+        font-size: clamp(34px, 3.4vw, 48px);
+      }
+
+      .model {
+        grid-template-columns: minmax(0, 0.48fr) minmax(0, 0.52fr);
+      }
+
+      .ladder {
+        gap: 10px;
+      }
+
+      .ladder-step {
+        padding: clamp(15px, 1.5vw, 20px);
+      }
+
+      .image-stack {
+        min-height: 0;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-items: stretch;
+      }
+
+      .image-stack .tall {
+        grid-row: auto;
+      }
+
+      .image-stack figure {
+        aspect-ratio: 3 / 4;
+        min-height: 0;
+      }
+
+      .persona-image {
+        height: auto;
+      }
+
+      .persona-copy {
+        padding: clamp(15px, 1.5vw, 20px);
+      }
+
+      .scene-layout {
+        grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.58fr);
+        gap: 16px;
+      }
+
+      .scene-detail {
+        display: grid;
+        grid-template-columns: minmax(190px, 0.36fr) minmax(0, 0.64fr);
+        align-items: stretch;
+      }
+
+      .scene-image {
+        height: auto;
+      }
+
+      .scene-copy {
+        padding: clamp(16px, 1.7vw, 22px);
+      }
+
+      .topic-list {
+        gap: 8px;
+        margin-top: 14px;
+      }
+
+      .matrix th,
+      .matrix td {
+        padding: clamp(10px, 1.1vw, 15px);
+        font-size: clamp(13px, 1vw, 15px);
+      }
+
+      .funnel {
+        grid-template-columns: minmax(0, 0.64fr) minmax(260px, 0.36fr);
+        gap: 14px;
+      }
+
+      .funnel-steps {
+        gap: 8px;
+      }
+
+      .funnel-step {
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 12px;
+      }
+
+      .step-num {
+        width: 36px;
+        height: 36px;
+      }
+
+      .danger {
+        padding: clamp(16px, 1.8vw, 22px);
+      }
+
+      .ending-layout {
+        grid-template-columns: minmax(0, 0.66fr) minmax(250px, 0.34fr);
+      }
+
+      .appendix-list {
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 920px) {
+      .hero,
+      .section-head,
+      .truth-layout,
+      .path-panel,
+      .model,
+      .scene-layout,
+      .funnel,
+      .ending-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-visual,
+      .hero-image,
+      .truth-image,
+      .side-image,
+      .ending-image {
+        min-height: 320px;
+      }
+
+      .grid-3,
+      .grid-2,
+      .data-grid,
+      .metric-row {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 620px) {
+      section {
+        padding: 54px 16px;
+      }
+
+      .hero {
+        padding: 38px 16px 28px;
+      }
+
+      .meta-grid,
+      .hero-panel,
+      .image-stack,
+      .topic-list {
+        grid-template-columns: 1fr;
+      }
+
+      .funnel-step {
+        grid-template-columns: 1fr;
+      }
+
+      .matrix {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+
+    /* Milight reference-inspired deck polish */
+    @media (min-width: 921px) {
+      :root {
+        --bg: #f4f6f8;
+        --paper: #ffffff;
+        --ink: #1f252c;
+        --muted: #64717f;
+        --line: #dde4ea;
+        --red: #b82734;
+        --green: #226f64;
+        --green-soft: #e8f4f1;
+        --gold: #d97941;
+        --gold-soft: #fff0e8;
+        --blue: #426f8f;
+        --blue-soft: #e8f1f6;
+        --shadow: 0 18px 44px rgba(22, 35, 48, 0.1);
+      }
+
+      body {
+        overflow-x: auto;
+        background: var(--bg);
+        font-size: 14px;
+        line-height: 1.38;
+      }
+
+      img {
+        object-fit: cover;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        width: min(1360px, calc(100vw - 32px));
+        min-width: 1120px;
+        margin: 0 auto;
+        padding: 12px 0 0;
+        border: 0;
+        background: transparent;
+        backdrop-filter: none;
+      }
+
+      .nav {
+        width: 100%;
+        max-width: none;
+        align-items: center;
+        gap: 6px;
+        overflow-x: auto;
+        padding: 8px;
+        margin: 0;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 10px 24px rgba(22, 35, 48, 0.06);
+        scrollbar-width: thin;
+      }
+
+      .brand {
+        flex: 0 0 auto;
+        min-width: auto;
+        padding: 4px 10px 4px 4px;
+        border: 1px solid #d8e1e6;
+        border-radius: 999px;
+        background: #fff;
+        color: #6d1e29;
+        font-size: 12px;
+      }
+
+      .brand-logo {
+        width: 28px;
+        height: 28px;
+        border-radius: 999px;
+        border-color: #e3c8cc;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 4px;
+        overflow-x: auto;
+      }
+
+      .nav-links a {
+        flex: 0 0 auto;
+        min-height: 30px;
+        padding: 5px 10px;
+        color: #6d1e29;
+        border: 1px solid #e1ccd0;
+        border-radius: 999px;
+        background: #fff;
+        font-size: 12px;
+        line-height: 1.15;
+        font-weight: 760;
+        text-align: center;
+        white-space: nowrap;
+      }
+
+      .nav-links a:hover {
+        color: #fff;
+        background: var(--red);
+        transform: translateY(-1px);
+      }
+
+      main {
+        width: min(1360px, calc(100vw - 32px));
+        min-width: 1120px;
+        margin: 0 auto;
+        padding: 14px 0 44px;
+      }
+
+      .hero,
+      main > section {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        min-height: 0;
+        height: auto;
+        max-height: none;
+        overflow: hidden;
+        padding: 24px;
+        margin: 0;
+        scroll-margin-top: 76px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--paper);
+        box-shadow: 0 8px 24px rgba(22, 35, 48, 0.045);
+      }
+
+      main > section {
+        margin-top: 22px;
+      }
+
+      .hero {
+        color: #fff;
+        background: linear-gradient(135deg, #6d1e29, #c73535 48%, #2f7d68);
+        box-shadow: var(--shadow);
+      }
+
+      .truth,
+      .selector,
+      .ending {
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .ending {
+        background: linear-gradient(135deg, #202523, #2f7d68);
+      }
+
+      .fit-frame {
+        width: 100%;
+        transform-origin: top left;
+      }
+
+      .hero > .fit-frame {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.72fr);
+        gap: 22px;
+        height: 100%;
+      }
+
+      main > section > .fit-frame {
+        height: 100%;
+        min-height: 100%;
+      }
+
+      .section-inner,
+      .ending-layout {
+        width: 100%;
+        max-width: none;
+        aspect-ratio: auto;
+        max-height: none;
+        min-height: 0;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        overflow: visible;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+      }
+
+      .section-inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .section-inner > .grid-3,
+      .section-inner > .grid-2,
+      .section-inner > .data-grid,
+      .section-inner > .model,
+      .section-inner > .scene-layout,
+      .section-inner > .metric-row,
+      .section-inner > .funnel {
+        flex: 1;
+        min-height: 0;
+      }
+
+      .section-inner > .grid-3,
+      .section-inner > .grid-2,
+      .section-inner > .data-grid,
+      .section-inner > .metric-row {
+        align-items: stretch;
+      }
+
+      #truth .grid-3 {
+        flex: 0 0 auto;
+      }
+
+      .hero .fit-frame > div:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.25;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin-bottom: 16px;
+        font-size: clamp(36px, 4.4vw, 60px);
+        font-weight: 860;
+      }
+
+      h2 {
+        margin-bottom: 12px;
+        color: #6d1e29;
+        font-size: 27px;
+      }
+
+      h3 {
+        margin-bottom: 6px;
+        font-size: 17px;
+      }
+
+      .ending h2 {
+        color: #fff;
+        font-size: 46px;
+      }
+
+      p,
+      li,
+      .section-note {
+        font-size: 14px;
+        line-height: 1.42;
+      }
+
+      .lead {
+        max-width: 760px;
+        margin-bottom: 18px;
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 17px;
+      }
+
+      .eyebrow,
+      .kicker {
+        margin-bottom: 7px;
+        color: var(--gold);
+        font-size: 13px;
+        font-weight: 820;
+      }
+
+      .hero .eyebrow {
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .hero-actions {
+        margin-bottom: 18px;
+      }
+
+      .button {
+        min-height: 34px;
+        padding: 7px 12px;
+        border-radius: 999px;
+        background: #fff;
+        color: #6d1e29;
+        font-size: 13px;
+      }
+
+      .button.secondary {
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.35);
+        background: rgba(255, 255, 255, 0.12);
+      }
+
+      .meta-grid {
+        gap: 8px;
+      }
+
+      .meta {
+        padding: 10px;
+        border-color: rgba(255, 255, 255, 0.24);
+        background: rgba(255, 255, 255, 0.12);
+        color: #fff;
+      }
+
+      .meta strong {
+        font-size: 16px;
+      }
+
+      .meta span {
+        color: rgba(255, 255, 255, 0.76);
+      }
+
+      .hero-visual {
+        height: 100%;
+        min-height: 0;
+        align-self: stretch;
+        display: grid;
+        grid-template-rows: minmax(0, 1fr) auto;
+        gap: 10px;
+      }
+
+      .hero-image,
+      .truth-image,
+      .side-image,
+      .persona-image,
+      .scene-image,
+      .ending-image,
+      .output-media {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        min-height: 0;
+        height: auto;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: #e7edf1;
+        box-shadow: 0 12px 28px rgba(22, 35, 48, 0.10);
+      }
+
+      .hero-image {
+        border-color: rgba(255, 255, 255, 0.25);
+        background: rgba(255, 255, 255, 0.12);
+        width: min(100%, 405px);
+        justify-self: end;
+        align-self: center;
+      }
+
+      .hero-panel {
+        gap: 8px;
+      }
+
+      .mini-panel {
+        padding: 10px;
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.24);
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .mini-panel span {
+        color: rgba(255, 255, 255, 0.76);
+      }
+
+      .section-head {
+        grid-template-columns: minmax(0, 0.78fr) minmax(260px, 0.34fr);
+        gap: 18px;
+        align-items: end;
+        margin-bottom: 14px;
+      }
+
+      .section-note,
+      .section-intro {
+        color: var(--muted);
+      }
+
+      .grid-3,
+      .grid-2,
+      .data-grid,
+      .metric-row {
+        gap: 12px;
+      }
+
+      .card,
+      .metric-block,
+      .appendix-item,
+      .scene-button,
+      .funnel-step,
+      .ladder-step {
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: #fff;
+        box-shadow: none;
+      }
+
+      .grid-3 .card:nth-child(1),
+      .metric-block:nth-child(1),
+      .appendix-item:nth-child(1) {
+        background: var(--blue-soft);
+        border-color: #cbdce7;
+      }
+
+      .grid-3 .card:nth-child(2),
+      .metric-block:nth-child(2),
+      .appendix-item:nth-child(2) {
+        background: var(--gold-soft);
+        border-color: #efd1bf;
+      }
+
+      .grid-3 .card:nth-child(3),
+      .metric-block:nth-child(3),
+      .appendix-item:nth-child(3) {
+        background: var(--green-soft);
+        border-color: #cce1db;
+      }
+
+      .truth-layout {
+        grid-template-columns: minmax(0, 1fr) minmax(260px, 0.42fr);
+        gap: 14px;
+      }
+
+      .big-quote {
+        min-height: 0;
+        padding: 24px;
+        background: #1f252c;
+      }
+
+      .big-quote .quote-title {
+        font-size: 38px;
+        line-height: 1.16;
+      }
+
+      .tabs {
+        gap: 6px;
+        margin-bottom: 12px;
+      }
+
+      .tab-button,
+      .scene-button,
+      .tag {
+        border-radius: 999px;
+      }
+
+      .tab-button {
+        min-height: 30px;
+        padding: 5px 12px;
+        font-size: 12px;
+      }
+
+      .path-panel {
+        grid-template-columns: minmax(0, 1fr) minmax(250px, 0.34fr);
+        gap: 14px;
+      }
+
+      .path-stage {
+        min-height: 0;
+        padding: 18px;
+        background: var(--blue-soft);
+        border-color: #cbdce7;
+      }
+
+      .path-stage h3,
+      .scene-copy h3 {
+        font-size: 24px;
+      }
+
+      .tag-row {
+        gap: 6px;
+        margin-top: 10px;
+      }
+
+      .tag {
+        min-height: 24px;
+        padding: 3px 8px;
+        border: 1px solid #c9dde0;
+        background: #f4fbfc;
+        font-size: 11px;
+      }
+
+      .data-card {
+        min-height: 0;
+        padding: 18px;
+      }
+
+      #competitor .data-card {
+        justify-content: center;
+        gap: 26px;
+      }
+
+      .data-card h3 {
+        font-size: 21px;
+      }
+
+      .data-card .metric {
+        font-size: 42px;
+      }
+
+      .model {
+        grid-template-columns: minmax(0, 0.46fr) minmax(0, 0.54fr);
+        gap: 14px;
+      }
+
+      .ladder {
+        gap: 10px;
+      }
+
+      .image-stack {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        min-height: 0;
+      }
+
+      .image-stack .tall {
+        grid-row: auto;
+      }
+
+      .image-stack figure {
+        aspect-ratio: 3 / 4;
+        min-height: 0;
+        border: 1px solid var(--line);
+        box-shadow: 0 12px 28px rgba(22, 35, 48, 0.10);
+      }
+
+      .persona-card {
+        overflow: hidden;
+        padding: 0;
+      }
+
+      .persona-image {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .persona-copy {
+        padding: 12px;
+      }
+
+      .scene-layout {
+        grid-template-columns: 250px minmax(0, 1fr);
+        gap: 14px;
+        align-items: stretch;
+      }
+
+      .scene-menu {
+        gap: 8px;
+      }
+
+      .scene-button {
+        padding: 10px 12px;
+        border-radius: var(--radius);
+      }
+
+      .scene-detail {
+        display: grid;
+        grid-template-columns: minmax(260px, 0.34fr) minmax(0, 0.66fr);
+        border-color: #c8dce0;
+        background: var(--blue-soft);
+      }
+
+      .scene-image {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .scene-copy {
+        padding: 16px;
+      }
+
+      .topic-list {
+        gap: 8px;
+        margin-top: 12px;
+      }
+
+      .topic {
+        padding: 8px 9px;
+        font-size: 12px;
+        line-height: 1.25;
+      }
+
+      .matrix th,
+      .matrix td {
+        padding: 10px 12px;
+        font-size: 13px;
+        line-height: 1.32;
+      }
+
+      .matrix th {
+        color: #6d1e29;
+        background: #f7e8eb;
+      }
+
+      .funnel {
+        grid-template-columns: minmax(0, 0.64fr) minmax(290px, 0.36fr);
+        gap: 14px;
+        align-items: stretch;
+      }
+
+      .funnel-steps {
+        gap: 8px;
+      }
+
+      .funnel-step {
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 10px;
+      }
+
+      .step-num {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+      }
+
+      .danger {
+        padding: 16px;
+        border-color: #e7bcbc;
+        background: #fff7f7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      #selector .funnel-step {
+        align-content: center;
+      }
+
+      #iteration .metric-block,
+      #personas .persona-copy,
+      #creator .matrix td,
+      #creator .matrix th {
+        vertical-align: middle;
+      }
+
+      #iteration .metric-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .ending-layout {
+        grid-template-columns: minmax(0, 0.64fr) minmax(280px, 0.36fr);
+        gap: 24px;
+        align-items: center;
+      }
+
+      .ending p,
+      .ending .lead {
+        color: rgba(255, 255, 255, 0.82);
+      }
+
+      .ending-image {
+        border-color: rgba(255, 255, 255, 0.24);
+      }
+
+      .appendix-list {
+        gap: 10px;
+      }
+
+      .footer {
+        width: min(1360px, calc(100vw - 32px));
+        min-width: 1120px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="topbar">
+    <div class="nav">
+      <a class="brand" href="#opening" aria-label="回到顶部">
+        <img class="brand-logo" src="assets/澳优logo.png" alt="澳优 logo">
+        <span>澳优小红书策略</span>
+      </a>
+      <div class="nav-links" aria-label="页面导航">
+        <a href="#truth">核心判断</a>
+        <a href="#competitor">竞品路径</a>
+        <a href="#opportunity">澳优机会</a>
+        <a href="#personas">核心人群</a>
+        <a href="#scenes">内容场景</a>
+        <a href="#creator">达人策略</a>
+        <a href="#selector">选号机制</a>
+        <a href="#appendix">数据附录</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero" id="opening">
+      <div>
+        <p class="eyebrow">AUSNUTRIA X 小红书营销策略</p>
+        <h1>从“配方成分的竞争”到“决策路径竞争”</h1>
+        <p class="lead">婴幼儿奶粉不是冲动消费品。小红书上的关键任务，不只是让澳优被看见，而是让澳优在用户真正开始比较之前，成为他们愿意收藏、咨询、反复核验的信息来源。</p>
+        <div class="hero-actions">
+          <a class="button" href="#path">查看决策路径</a>
+          <a class="button secondary" href="#selector">查看选号机制</a>
+        </div>
+        <div class="meta-grid" aria-label="方案基本信息">
+          <div class="meta">
+            <strong>小红书</strong>
+            <span>搜索型生活决策平台</span>
+          </div>
+          <div class="meta">
+            <strong>婴幼儿奶粉</strong>
+            <span>高信任成本家庭决策品</span>
+          </div>
+          <div class="meta">
+            <strong>三层打法</strong>
+            <span>前置教育 / 真实场景 / 理性转化</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="母婴产品视觉">
+        <figure class="hero-image">
+          <img src="assets/IMG_0229.jpg" alt="澳优婴幼儿奶粉产品与母婴场景">
+        </figure>
+        <div class="hero-panel">
+          <div class="mini-panel">
+            <b>先看懂</b>
+            <span>月龄、产品信息、官方渠道</span>
+          </div>
+          <div class="mini-panel">
+            <b>再决定</b>
+            <span>比较、咨询、核验、购买</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="truth" id="truth">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <p class="kicker">核心判断</p>
+            <h2>用户买的从来不只是一罐奶粉</h2>
+          </div>
+          <p class="section-note">他们购买的是一种“我知道该怎么选”的确定感。</p>
+        </div>
+        <div class="truth-layout">
+          <div class="big-quote">
+            <div class="quote-title">奶粉竞争的关键，不只是被看见，而是被纳入选择。</div>
+            <p>澳优需要从“讲产品”转向“帮助用户完成选奶决策”。</p>
+          </div>
+          <figure class="truth-image">
+            <img src="assets/28341780501795_.pic_hd.jpg" alt="家庭囤货和真实生活中的奶粉场景">
+          </figure>
+        </div>
+        <div class="grid-3" style="margin-top:16px">
+          <article class="card">
+            <h3>喂养选择清楚</h3>
+            <p>不同月龄、不同阶段、不同家庭分工，都需要有能被全家理解的判断标准。</p>
+          </article>
+          <article class="card">
+            <h3>产品信息可核验</h3>
+            <p>适用月龄、产品线、购买渠道、客服入口，要能回到官方资料确认。</p>
+          </article>
+          <article class="card">
+            <h3>真实家庭可参考</h3>
+            <p>小红书内容需要呈现真实购买、真实使用和真实问题，而不是单向卖点展示。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="path">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Decision Path</p>
+            <h2>奶粉用户决策路径可拆为三段</h2>
+          </div>
+          <p class="section-note">竞品已经不只在争夺曝光，而是在争夺用户从搜索到购买的关键节点。</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="决策路径阶段">
+          <button class="tab-button is-active" data-tab="path" data-target="problem" type="button">问题进入</button>
+          <button class="tab-button" data-tab="path" data-target="trust" type="button">信任建立</button>
+          <button class="tab-button" data-tab="path" data-target="convert" type="button">购买确认</button>
+        </div>
+        <div class="tab-panel is-active" data-panel="path" id="problem">
+          <div class="path-panel">
+            <article class="path-stage">
+              <h3>问题进入：从月龄、转奶、喂养焦虑开始</h3>
+              <p>用户并不总是先搜索品牌，而是先搜索“不同月龄怎么选”“转段前准备什么”“宝宝喂养问题怎么判断”。品牌要先进入这些问题场景。</p>
+              <div class="tag-row">
+                <span class="tag">月龄节奏</span>
+                <span class="tag">转奶准备</span>
+                <span class="tag">家庭沟通</span>
+                <span class="tag">信息核验</span>
+              </div>
+            </article>
+            <figure class="side-image"><img src="assets/919b5fa052cfe54da4a04b74b4bf9a62.jpg" alt="奶粉科普和问题进入内容素材"></figure>
+          </div>
+        </div>
+        <div class="tab-panel" data-panel="path" id="trust">
+          <div class="path-panel">
+            <article class="path-stage">
+              <h3>信任建立：通过测评、对比、科普进入候选清单</h3>
+              <p>中高粉达人承担“选奶决策顾问”的角色，帮助用户理解差异、降低风险，并推动品牌进入认真比较范围。</p>
+              <div class="tag-row">
+                <span class="tag">测评对比</span>
+                <span class="tag">成分解释</span>
+                <span class="tag">横向比较</span>
+                <span class="tag">候选清单</span>
+              </div>
+            </article>
+            <figure class="side-image"><img src="assets/28461780501809_.pic_hd.jpg" alt="奶粉对比与测评内容素材"></figure>
+          </div>
+        </div>
+        <div class="tab-panel" data-panel="path" id="convert">
+          <div class="path-panel">
+            <article class="path-stage">
+              <h3>购买确认：用晒单、囤货、渠道信息降低下单顾虑</h3>
+              <p>越接近购买，用户越需要真实场景和可执行信息：在哪里买、怎么核验、活动期是否划算、客服能否承接。</p>
+              <div class="tag-row">
+                <span class="tag">晒单囤货</span>
+                <span class="tag">官方渠道</span>
+                <span class="tag">客服咨询</span>
+                <span class="tag">活动承接</span>
+              </div>
+            </article>
+            <figure class="side-image"><img src="assets/ff66dd02769a805142d977cecb75536b.jpg" alt="奶粉晒单和囤货内容素材"></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="truth" id="competitor">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Competitive Moves</p>
+            <h2>竞品正在分别占据三类决策入口</h2>
+          </div>
+          <p class="section-note">不同达人层级和内容形态，正在承担理性解释、生活渗透和问题场景抢占的不同任务。</p>
+        </div>
+        <div class="data-grid">
+          <article class="data-card">
+            <div>
+              <h3>中高粉达人做测评 / 对比</h3>
+              <p>美素佳儿、惠氏、爱他美在 10 万粉以上达人层级测评内容占比明显提升。</p>
+            </div>
+            <div>
+              <div class="metric">44.62%</div>
+              <small>惠氏 200,001-300,000 粉层测评 / 对比占比</small>
+            </div>
+          </article>
+          <article class="data-card">
+            <div>
+              <h3>低粉达人承接晒单 / 囤货</h3>
+              <p>低粉内容解决“真实妈妈在买”“哪里买更安心”“现在买是否划算”。</p>
+            </div>
+            <div>
+              <div class="metric">26.4%</div>
+              <small>惠氏 1,000-5,000 粉层购物晒单 / 囤货占比</small>
+            </div>
+          </article>
+          <article class="data-card">
+            <div>
+              <h3>功能型品牌抢问题场景</h3>
+              <p>a2、合生元持续绑定敏感肠胃 / 特殊需求等高意图搜索场景。</p>
+            </div>
+            <div>
+              <div class="metric">24.68%</div>
+              <small>a2 50,001-100,000 粉层敏感肠胃 / 特殊需求占比</small>
+            </div>
+          </article>
+        </div>
+        <p class="footnote">数据来源：小红书 2025.06–2026.06 奶粉行业内容数据；基于品牌关键词检索及蒲公英达人匹配，筛选粉丝量 &gt;200 达人内容，最终有效样本 137,897 条，覆盖 22 个奶粉品牌。</p>
+      </div>
+    </section>
+
+    <section id="opportunity">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Ausnutria Opportunity</p>
+            <h2>澳优不应只做内容铺量，而要设计完整决策链路</h2>
+          </div>
+          <p class="section-note">这套打法的本质，是把澳优从“被用户看到”推进到“被用户认真考虑”。</p>
+        </div>
+        <div class="model">
+          <div class="ladder">
+            <article class="ladder-step">
+              <h3>问题进入</h3>
+              <p>用低粉达人和真实妈妈进入搜索、收藏路径，承接孕晚期和新手家庭前置焦虑。</p>
+            </article>
+            <article class="ladder-step">
+              <h3>信任建立</h3>
+              <p>用中高粉达人、专业测评、横向对比、成分解释，帮助澳优进入候选清单。</p>
+            </article>
+            <article class="ladder-step">
+              <h3>购买确认</h3>
+              <p>用晒单、购买攻略、活动承接和客服入口，降低用户下单前的不确定感。</p>
+            </article>
+          </div>
+          <div class="image-stack" aria-label="澳优决策链路内容素材">
+            <figure class="tall"><img src="assets/IMG_0245.jpg" alt="前置教育内容素材"></figure>
+            <figure><img src="assets/IMG_0246.jpg" alt="信任建立内容素材"></figure>
+            <figure><img src="assets/IMG_0247.jpg" alt="购买确认内容素材"></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="truth" id="personas">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Audience</p>
+            <h2>三类人群，对应三种内容任务</h2>
+          </div>
+          <p class="section-note">不同阶段家庭的决策问题不同，不能用同一种内容触达所有母婴用户。</p>
+        </div>
+        <div class="grid-3">
+          <article class="card persona-card">
+            <div class="persona-image"><img src="assets/cover-gallery/click-still-real.jpg" alt="新手安心派家庭场景"></div>
+            <div class="persona-copy">
+              <h3>新手安心派</h3>
+              <p><b>0-6 月龄 / 孕晚期</b></p>
+              <p>需要基础知识、月龄逻辑、官方信息入口。内容任务是科学喂养教育、选奶基础清单和官方咨询导流。</p>
+            </div>
+          </article>
+          <article class="card persona-card">
+            <div class="persona-image"><img src="assets/cover-gallery/click-handheld.jpg" alt="喂养磨合派家庭场景"></div>
+            <div class="persona-copy">
+              <h3>喂养磨合派</h3>
+              <p><b>6-18 月龄</b></p>
+              <p>关注转段、转奶、外出、夜间喂养和家庭协作。内容要把执行细节拍具体。</p>
+            </div>
+          </article>
+          <article class="card persona-card">
+            <div class="persona-image"><img src="assets/cover-gallery/trust-product-form.jpg" alt="成长规划派家庭场景"></div>
+            <div class="persona-copy">
+              <h3>成长规划派</h3>
+              <p><b>18-36 月龄</b></p>
+              <p>关注产品线、预算、囤货节奏和长期购买稳定性。内容要帮助家庭固定选择标准。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="scenes">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Content Scenes</p>
+            <h2>三大内容场景，覆盖完整决策路径</h2>
+          </div>
+          <p class="section-note">这不是三类孤立内容，而是一条从搜索、收藏、比较到咨询、购买的连续路径。</p>
+        </div>
+        <div class="scene-layout">
+          <div class="scene-menu" aria-label="内容场景选择">
+            <button class="scene-button is-active" type="button" data-scene="education">
+              <b>选奶前置教育场</b>
+              <span>先帮用户看懂，再让用户考虑澳优</span>
+            </button>
+            <button class="scene-button" type="button" data-scene="life">
+              <b>真实喂养场景场</b>
+              <span>把奶粉放进真实家庭动线里</span>
+            </button>
+            <button class="scene-button" type="button" data-scene="decision">
+              <b>理性决策转化场</b>
+              <span>越接近购买，越要把信息核清楚</span>
+            </button>
+          </div>
+          <article class="scene-detail">
+            <div class="scene-image"><img id="scene-img" src="assets/cover-gallery/trust-product-form.jpg" alt="选奶前置教育内容示例"></div>
+            <div class="scene-copy">
+              <h3 id="scene-title">先帮用户看懂，再让用户考虑澳优</h3>
+              <p id="scene-body">让澳优提前进入孕晚期、新手父母、0-12 月龄家庭的搜索路径。重点方向包括月龄选择逻辑、奶粉信息核验清单、转段转奶准备和家庭沟通表。</p>
+              <div class="topic-list" id="scene-topics">
+                <div class="topic">《0-36 月龄奶粉选择逻辑》</div>
+                <div class="topic">《给新手爸妈的信息核验清单》</div>
+                <div class="topic">月龄节奏</div>
+                <div class="topic">官方渠道</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="truth" id="creator">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Creator Matrix</p>
+            <h2>不同达人承担不同决策任务</h2>
+          </div>
+          <p class="section-note">达人不是按粉丝量简单分层，而是按用户决策阶段分工。</p>
+        </div>
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th>达人类型</th>
+              <th>核心角色</th>
+              <th>适合内容</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>母婴科普型达人</td>
+              <td>前置教育和搜索承接</td>
+              <td>月龄逻辑、信息阅读、转奶准备</td>
+            </tr>
+            <tr>
+              <td>真实育儿 KOC</td>
+              <td>生活场景渗透和信任共鸣</td>
+              <td>夜间喂养、外出携带、家庭分工</td>
+            </tr>
+            <tr>
+              <td>育儿消费决策达人</td>
+              <td>理性转化和购买确认</td>
+              <td>下单清单、渠道提示、产品线整理</td>
+            </tr>
+            <tr>
+              <td>品牌自播 / 店播切片号</td>
+              <td>客服承接和转化闭环</td>
+              <td>FAQ、活动解释、包装信息讲解</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="selector" id="selector">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Account Selection</p>
+            <h2>达人账号选号机制</h2>
+          </div>
+          <p class="section-note">选号目标不是找到“看起来流量大”的账号，而是找到真实、匹配、效率可控且合作风险低的账号。</p>
+        </div>
+        <div class="funnel">
+          <div class="funnel-steps">
+            <article class="funnel-step">
+              <div class="step-num">01</div>
+              <div>
+                <h3>真实性初筛</h3>
+                <p>粉丝量 ≥1000；近 3 个月笔记数 ≥10 篇；无异常涨粉、无水军评论、非搬运号或低质营销号。</p>
+              </div>
+            </article>
+            <article class="funnel-step">
+              <div class="step-num">02</div>
+              <div>
+                <h3>宝宝年龄匹配</h3>
+                <p>喂养知识 / 敏感肠胃优先匹配 0-12 个月；测评 / 对比可放宽至 0-24 个月；育儿生活可覆盖 0-36 个月。</p>
+              </div>
+            </article>
+            <article class="funnel-step">
+              <div class="step-num">03</div>
+              <div>
+                <h3>数据效率校验</h3>
+                <p>按达人量级核验近 30 天阅读中位数、互动率、CPE、CPM，避免只看粉丝量。</p>
+              </div>
+            </article>
+            <article class="funnel-step">
+              <div class="step-num">04</div>
+              <div>
+                <h3>画像与商单频率</h3>
+                <p>女性粉丝占比 ≥80%；25-34 岁粉丝占比 ≥55%；近 30 天笔记数 ≥4 篇；商业笔记过半直接淘汰。</p>
+              </div>
+            </article>
+          </div>
+          <aside class="danger">
+            <h3>一票否决项</h3>
+            <ul>
+              <li>合作笔记前后 7 天出现竞品内容</li>
+              <li>刷量嫌疑、账号违规、内容搬运或低质</li>
+              <li>宝宝年龄无法确认且拒绝提供证明</li>
+              <li>报价超过对应量级上限</li>
+            </ul>
+            <p class="footnote">提报字段需填写：种草类型、达人量级、宝宝月龄、互动率、排竞、置顶、素材授权、含服务费报价。</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="iteration">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Iteration</p>
+            <h2>用三层指标判断内容是否真正进入决策路径</h2>
+          </div>
+          <p class="section-note">评估不能只看曝光和点赞，要看内容是否引发收藏、问题、咨询和购买动作。</p>
+        </div>
+        <div class="metric-row">
+          <article class="metric-block">
+            <h3>搜索层</h3>
+            <ul>
+              <li>搜索曝光</li>
+              <li>收藏率</li>
+              <li>评论问题密度</li>
+              <li>私信咨询量</li>
+            </ul>
+          </article>
+          <article class="metric-block">
+            <h3>共鸣层</h3>
+            <ul>
+              <li>完播率</li>
+              <li>分享率</li>
+              <li>同龄家庭互动</li>
+              <li>达人主页回访</li>
+            </ul>
+          </article>
+          <article class="metric-block">
+            <h3>转化层</h3>
+            <ul>
+              <li>店铺访问</li>
+              <li>加购</li>
+              <li>客服咨询完成率</li>
+              <li>活动页点击</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ending" id="ending">
+      <div class="ending-layout">
+        <div>
+          <p class="kicker">Final Thought</p>
+          <h2>澳优要进入的不是信息流，而是家庭决策路径</h2>
+          <p class="lead">这套打法的核心，不是把澳优讲得更响，而是把父母的选择过程讲得更清楚。</p>
+          <p>当品牌能够帮助用户从焦虑走向判断，从判断走向咨询，从咨询走向购买，澳优就不只是被看见，而是被认真考虑。</p>
+        </div>
+        <figure class="ending-image">
+          <img src="assets/cover-gallery/click-baby-product.jpg" alt="澳优产品与家庭决策路径收口视觉">
+        </figure>
+      </div>
+    </section>
+
+    <section id="appendix">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Appendix</p>
+            <h2>数据来源与研究方法</h2>
+          </div>
+          <p class="section-note">用于说明竞品判断和百分比数据来自统一口径的数据清洗与达人匹配。</p>
+        </div>
+        <div class="grid-2">
+          <div class="appendix-list">
+            <div class="appendix-item">
+              <b>统计周期</b>
+              <span>2025 年 6 月 1 日至 2026 年 6 月 1 日</span>
+            </div>
+            <div class="appendix-item">
+              <b>检索口径</b>
+              <span>以“奶粉 + 品牌词”为核心检索口径，覆盖爱他美、飞鹤、君乐宝、美素佳儿、A2、至初、合生元、启赋、美赞臣等核心品牌。</span>
+            </div>
+            <div class="appendix-item">
+              <b>样本清洗</b>
+              <span>筛选粉丝量大于 200 的博主内容，结合蒲公英达人信息进行账号匹配、粉丝层级及博主画像校准。</span>
+            </div>
+          </div>
+          <div class="appendix-list">
+            <div class="appendix-item">
+              <b>有效样本</b>
+              <span>经过去重、清洗及异常值处理后，形成 137,897 条有效内容样本，覆盖 22 个奶粉品牌。</span>
+            </div>
+            <div class="appendix-item">
+              <b>底层数据表</b>
+              <span>post_gpt_tags_pgy_price</span>
+            </div>
+            <div class="appendix-item">
+              <b>数据链路</b>
+              <span>小红书主贴数据 → GPT 规则完成内容形态与品牌打标 → 关联蒲公英达人信息 → 品牌 × 粉丝层级口径计算内容形态占比。</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    澳优婴幼儿奶粉小红书营销策略方案 · HTML 展示稿
+  </footer>
+
+  <script>
+    function wrapDeckFrames() {
+      if (window.innerWidth < 921) return;
+      document.querySelectorAll(".hero, main > section").forEach((page) => {
+        if (page.firstElementChild && page.firstElementChild.classList.contains("fit-frame")) return;
+        const frame = document.createElement("div");
+        frame.className = "fit-frame";
+        while (page.firstChild) frame.appendChild(page.firstChild);
+        page.appendChild(frame);
+      });
+    }
+
+    function fitDeckFrames() {
+      if (window.innerWidth < 921) {
+        document.querySelectorAll(".fit-frame").forEach((frame) => {
+          frame.style.transform = "";
+          frame.style.width = "";
+          frame.style.height = "";
+        });
+        return;
+      }
+
+      document.querySelectorAll(".hero, main > section").forEach((page) => {
+        const frame = page.querySelector(":scope > .fit-frame");
+        if (!frame) return;
+        const style = window.getComputedStyle(page);
+        const availableWidth = page.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
+        const availableHeight = page.clientHeight - parseFloat(style.paddingTop) - parseFloat(style.paddingBottom);
+
+        frame.style.transform = "none";
+        frame.style.width = `${availableWidth}px`;
+        frame.style.height = `${availableHeight}px`;
+
+        const rect = frame.getBoundingClientRect();
+        const contentHeight = Math.max(rect.height, frame.scrollHeight);
+        const scale = Math.min(1, availableWidth / rect.width, availableHeight / contentHeight);
+        frame.style.width = `${availableWidth / scale}px`;
+        frame.style.height = `${availableHeight / scale}px`;
+        frame.style.transform = `scale(${scale})`;
+      });
+    }
+
+    wrapDeckFrames();
+    requestAnimationFrame(fitDeckFrames);
+    window.addEventListener("load", fitDeckFrames);
+    window.addEventListener("resize", () => {
+      wrapDeckFrames();
+      fitDeckFrames();
+    });
+
+    const sceneData = {
+      education: {
+        img: "assets/cover-gallery/trust-product-form.jpg",
+        alt: "选奶前置教育内容示例",
+        title: "先帮用户看懂，再让用户考虑澳优",
+        body: "让澳优提前进入孕晚期、新手父母、0-12 月龄家庭的搜索路径。重点方向包括月龄选择逻辑、奶粉信息核验清单、转段转奶准备和家庭沟通表。",
+        topics: ["《0-36 月龄奶粉选择逻辑》", "《给新手爸妈的信息核验清单》", "月龄节奏", "官方渠道"]
+      },
+      life: {
+        img: "assets/cover-gallery/click-handheld.jpg",
+        alt: "真实喂养场景内容示例",
+        title: "把奶粉放进真实家庭动线里",
+        body: "让用户看到澳优不只是货架上的产品，而是可以进入日常喂养流程的选择。重点呈现夜间喂养、外出携带、宝爸长辈协作、转奶记录和奶粉区收纳。",
+        topics: ["《有娃后才懂，奶粉区不是摆整齐就够了》", "《宝爸也能照着做的冲奶步骤贴》", "夜间喂养", "家庭分工"]
+      },
+      decision: {
+        img: "assets/cover-gallery/convert-review.jpg",
+        alt: "理性决策转化内容示例",
+        title: "越接近购买，越要把信息核清楚",
+        body: "承接已经进入品牌对比和购买准备的用户，围绕下单前核验清单、官方渠道购买提示、产品信息确认、客服咨询入口和活动期购买节奏降低决策成本。",
+        topics: ["《准备买奶粉前，我会再确认这 5 件事》", "《活动期买奶粉，先把这几项核对好》", "官方渠道", "客服咨询"]
+      }
+    };
+
+    document.querySelectorAll("[data-tab]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const group = button.dataset.tab;
+        const target = button.dataset.target;
+        document.querySelectorAll(`[data-tab="${group}"]`).forEach((item) => item.classList.remove("is-active"));
+        document.querySelectorAll(`[data-panel="${group}"]`).forEach((panel) => panel.classList.remove("is-active"));
+        button.classList.add("is-active");
+        document.getElementById(target).classList.add("is-active");
+      });
+    });
+
+    document.querySelectorAll("[data-scene]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const key = button.dataset.scene;
+        const data = sceneData[key];
+        document.querySelectorAll("[data-scene]").forEach((item) => item.classList.remove("is-active"));
+        button.classList.add("is-active");
+        const img = document.getElementById("scene-img");
+        img.src = data.img;
+        img.alt = data.alt;
+        document.getElementById("scene-title").textContent = data.title;
+        document.getElementById("scene-body").textContent = data.body;
+        document.getElementById("scene-topics").innerHTML = data.topics.map((topic) => `<div class="topic">${topic}</div>`).join("");
+        fitDeckFrames();
+      });
+    });
+  </script>
+</body>
+</html>
