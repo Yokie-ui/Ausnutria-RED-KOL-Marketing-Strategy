@@ -63,7 +63,7 @@
     }
 
     .page {
-      width: min(1200px, calc(100% - 40px));
+      width: min(1180px, calc(100% - 32px));
       margin: 0 auto;
       padding: 18px 0 64px;
     }
@@ -253,6 +253,7 @@
 
     section {
       margin-top: 18px;
+      position: relative;
       padding: 34px;
       border: 1px solid var(--line);
       border-radius: var(--radius);
@@ -359,6 +360,23 @@
       overflow: hidden;
       border-radius: var(--radius);
       box-shadow: var(--shadow);
+    }
+
+    .a2-carousel {
+      aspect-ratio: 9 / 16;
+      background: #fff;
+    }
+
+    .a2-carousel .demo-dots {
+      bottom: 82px;
+    }
+
+    .a2-carousel .demo-dot {
+      background: rgba(5, 39, 95, 0.28);
+    }
+
+    .a2-carousel .demo-dot.is-active {
+      background: var(--accent);
     }
 
     .path-lab,
@@ -511,6 +529,10 @@
       display: flex;
       justify-content: center;
       gap: 6px;
+    }
+
+    .image-panel.demo-carousel .demo-dots {
+      bottom: 82px;
     }
 
     .demo-dot {
@@ -693,6 +715,520 @@
       border-radius: 50%;
       background: var(--accent);
       font-weight: 900;
+    }
+
+    .creator-dark-board {
+      color: var(--ink);
+      border-color: var(--line);
+      background: var(--paper);
+      box-shadow: 0 10px 28px rgba(32, 37, 35, 0.055);
+    }
+
+    .creator-dark-board h2 {
+      width: auto;
+      margin: 0 0 16px;
+      color: var(--brand-deep);
+      text-align: left;
+      font-size: 30px;
+    }
+
+    .creator-dark-board h2::after {
+      content: none;
+    }
+
+    .creator-dark-board .section-intro {
+      max-width: 860px;
+      margin: 0 0 18px;
+      color: var(--muted);
+      text-align: left;
+    }
+
+    .creator-stage-grid,
+    .creator-step-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .creator-stage {
+      min-width: 0;
+    }
+
+    .stage-pill,
+    .neon-pill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      margin-bottom: 12px;
+      padding: 8px 16px;
+      color: #fff;
+      border-radius: 999px;
+      font-weight: 900;
+      text-align: center;
+      box-shadow: 0 10px 22px rgba(7, 53, 124, 0.12);
+    }
+
+    .stage-pill.pink,
+    .neon-pill.pink {
+      background: var(--accent);
+    }
+
+    .stage-pill.blue,
+    .neon-pill.blue {
+      background: var(--brand);
+    }
+
+    .stage-pill.cyan,
+    .neon-pill.cyan {
+      background: var(--green);
+    }
+
+    .stage-panel,
+    .step-panel {
+      min-height: 206px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: none;
+    }
+
+    .stage-tiles {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .stage-tile,
+    .stage-line,
+    .value-line {
+      padding: 14px;
+      border: 1px solid #c8d9f2;
+      border-radius: var(--radius);
+      background: var(--blue-soft);
+    }
+
+    .stage-tile strong,
+    .stage-line strong,
+    .value-line strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--brand-deep);
+      font-size: 16px;
+    }
+
+    .stage-tile span,
+    .stage-line span,
+    .value-line span,
+    .step-panel p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .stage-line + .stage-line,
+    .value-line + .value-line {
+      margin-top: 12px;
+    }
+
+    .value-tabs {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      margin-bottom: 0;
+    }
+
+    .value-tabs span {
+      display: grid;
+      place-items: center;
+      min-height: 34px;
+      color: var(--brand-deep);
+      border: 1px solid #c8d9f2;
+      border-radius: 999px;
+      background: var(--blue-soft);
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    .creator-flow {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 88px minmax(0, 1fr) 88px minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+      margin: 28px 0 22px;
+    }
+
+    .creator-flow .flow-step {
+      display: block;
+      padding: 0;
+      color: var(--ink);
+      text-align: center;
+      border: 0;
+      background: transparent;
+    }
+
+    .flow-step {
+      text-align: center;
+    }
+
+    .creator-flow .flow-step strong {
+      display: block;
+      color: var(--brand-deep);
+      font-size: 28px;
+      line-height: 1.15;
+      font-weight: 920;
+    }
+
+    .creator-flow .flow-step span {
+      color: var(--muted);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .flow-arrow {
+      color: var(--accent);
+      font-size: 44px;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .step-panel {
+      min-height: 260px;
+    }
+
+    .step-panel h3 {
+      color: var(--brand-deep);
+      text-align: center;
+    }
+
+    .step-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 14px 0;
+    }
+
+    .step-tags span {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 6px 10px;
+      color: #fff;
+      border-radius: 999px;
+      background: var(--accent);
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    .step-panel.blue-accent .step-tags span {
+      background: var(--brand);
+    }
+
+    .persona-bubbles,
+    .creator-node-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 14px;
+    }
+
+    .persona-bubbles span,
+    .creator-node-row span {
+      display: grid;
+      place-items: center;
+      min-width: 72px;
+      min-height: 72px;
+      padding: 10px;
+      color: var(--brand-deep);
+      border: 1px solid #c8d9f2;
+      border-radius: 50%;
+      background: var(--blue-soft);
+      font-size: 13px;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .creator-node-row span {
+      min-width: 68px;
+      min-height: 44px;
+      border-radius: 999px;
+      background: var(--blue-soft);
+    }
+
+    .creator-red-board {
+      border-color: var(--line);
+      background: var(--paper);
+    }
+
+    .red-system {
+      display: grid;
+      grid-template-columns: 82px minmax(0, 1fr);
+      gap: 14px;
+    }
+
+    .red-rail {
+      display: grid;
+      gap: 14px;
+    }
+
+    .red-rail span {
+      display: grid;
+      place-items: center;
+      min-height: 144px;
+      color: #fff;
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, var(--brand), var(--brand-deep));
+      font-size: 22px;
+      line-height: 1.25;
+      font-weight: 900;
+      writing-mode: vertical-rl;
+      letter-spacing: 0;
+    }
+
+    .red-board-body {
+      display: grid;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .red-top-grid,
+    .red-value-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .red-panel {
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .red-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 8px 16px;
+      color: #fff;
+      background: linear-gradient(180deg, var(--brand), var(--brand-deep));
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .red-panel-body {
+      padding: 16px;
+    }
+
+    .red-tree {
+      display: grid;
+      grid-template-columns: 84px minmax(0, 1fr);
+      gap: 12px;
+      align-items: center;
+    }
+
+    .red-circle {
+      display: grid;
+      place-items: center;
+      width: 74px;
+      height: 74px;
+      color: #fff;
+      border-radius: 50%;
+      background: linear-gradient(180deg, var(--brand), var(--brand-deep));
+      font-size: 15px;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .red-branches {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .red-branch {
+      display: grid;
+      gap: 8px;
+    }
+
+    .red-branch strong,
+    .red-chip {
+      display: grid;
+      place-items: center;
+      min-height: 32px;
+      padding: 7px 10px;
+      color: var(--brand-deep);
+      border: 1px solid #c8d9f2;
+      border-radius: 999px;
+      background: var(--blue-soft);
+      font-size: 13px;
+      font-weight: 850;
+      text-align: center;
+    }
+
+    .red-chip {
+      color: #fff;
+      border-color: var(--brand);
+      background: linear-gradient(180deg, var(--brand), var(--brand-deep));
+    }
+
+    .red-mini-table {
+      display: grid;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .red-mini-row {
+      display: grid;
+      grid-template-columns: 0.34fr 0.66fr;
+      min-height: 44px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .red-mini-row:last-child {
+      border-bottom: 0;
+    }
+
+    .red-mini-row strong,
+    .red-mini-row span {
+      display: flex;
+      align-items: center;
+      padding: 9px 12px;
+      font-size: 13px;
+    }
+
+    .red-mini-row strong {
+      color: var(--brand-deep);
+      background: var(--blue-soft);
+      font-weight: 900;
+    }
+
+    .red-mini-row span {
+      color: var(--muted);
+      background: #fff;
+    }
+
+    .red-banner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .red-banner span {
+      display: grid;
+      place-items: center;
+      min-height: 44px;
+      padding: 9px 14px;
+      color: #a50000;
+      border: 2px solid #c8d9f2;
+      border-radius: var(--radius);
+      background: var(--blue-soft);
+      color: var(--brand-deep);
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .red-operation {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .red-op-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .red-op-card h3 {
+      display: grid;
+      place-items: center;
+      min-height: 36px;
+      margin: 0;
+      color: #fff;
+      background: linear-gradient(180deg, var(--brand), var(--brand-deep));
+      font-size: 16px;
+    }
+
+    .red-op-card p {
+      padding: 14px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .red-loop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .red-loop-stage {
+      display: grid;
+      gap: 10px;
+      justify-items: center;
+    }
+
+    .red-loop-dot {
+      display: grid;
+      place-items: center;
+      width: 72px;
+      height: 72px;
+      color: #fff;
+      border-radius: 50%;
+      background: linear-gradient(180deg, var(--brand), var(--brand-deep));
+      font-weight: 900;
+    }
+
+    .red-loop-copy {
+      display: grid;
+      gap: 8px;
+    }
+
+    .red-loop-copy span {
+      padding: 9px 12px;
+      color: var(--brand-deep);
+      border: 1px solid #c8d9f2;
+      border-radius: 999px;
+      background: var(--blue-soft);
+      font-size: 13px;
+      font-weight: 850;
+      text-align: center;
+    }
+
+    .red-value-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .red-value {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      text-align: center;
+    }
+
+    .red-value strong {
+      display: block;
+      padding: 10px 12px;
+      color: #fff;
+      background: linear-gradient(180deg, var(--brand), var(--brand-deep));
+      font-size: 15px;
+    }
+
+    .red-value span {
+      display: block;
+      padding: 14px;
+      color: var(--muted);
+      font-size: 14px;
     }
 
     .ending {
@@ -942,7 +1478,7 @@
 
     .cover-gallery-strip {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 10px;
       margin-top: 14px;
     }
@@ -1003,12 +1539,37 @@
       .insight-layout,
       .appendix-layout,
       .cover-strategy-grid,
-      .selector-grid {
+      .selector-grid,
+      .creator-stage-grid,
+      .creator-step-grid,
+      .red-top-grid,
+      .red-operation,
+      .red-value-grid,
+      .red-banner,
+      .red-loop {
         grid-template-columns: 1fr;
       }
 
-      .cover-gallery-strip {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+      .creator-flow {
+        grid-template-columns: 1fr;
+      }
+
+      .flow-arrow {
+        transform: rotate(90deg);
+      }
+
+      .red-system {
+        grid-template-columns: 1fr;
+      }
+
+      .red-rail {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .red-rail span {
+        min-height: 48px;
+        writing-mode: horizontal-tb;
+        font-size: 16px;
       }
 
       .output.has-media,
@@ -1061,6 +1622,10 @@
         font-size: 24px;
       }
 
+      .creator-dark-board h2 {
+        font-size: 28px;
+      }
+
       section {
         padding: 18px;
       }
@@ -1071,6 +1636,14 @@
       .demo-body {
         padding: 16px;
       }
+
+      .stage-tiles,
+      .value-tabs,
+      .red-branches,
+      .red-mini-row,
+      .red-tree {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -1079,12 +1652,11 @@
     <nav class="nav" aria-label="页面导航">
       <a href="#opening">核心判断</a>
       <a href="#truth">用户真相</a>
+      <a href="#matrix">达人矩阵</a>
       <a href="#personas">三类人群</a>
       <a href="#path">决策路径</a>
-      <a href="#scenes">内容场景</a>
       <a href="#content-demo">内容 Demo</a>
       <a href="#competitor">竞品洞察</a>
-      <a href="#matrix">达人矩阵</a>
       <a href="#selector">选号机制</a>
       <a href="#iteration">迭代优化</a>
       <a href="#cover-appendix">附录2</a>
@@ -1144,7 +1716,7 @@
           </div>
         </div>
         <figure class="image-panel">
-          <img src="assets/28341780501795_.pic_hd.jpg" alt="母婴家庭奶粉购买和囤货场景">
+          <img src="assets/IMG_0243v2.jpg" alt="小红书转奶拉肚子搜索结果截图">
           <figcaption class="caption">对于婴幼儿奶粉，能判断，才会更接近信任。</figcaption>
         </figure>
       </div>
@@ -1203,6 +1775,82 @@
       <p class="footnote">数据来源：小红书 2025.06-2026.06 奶粉行业内容数据；基于品牌关键词检索及蒲公英达人匹配，筛选粉丝量 &gt;200 达人内容，最终有效样本 137,897 条，覆盖 22 个奶粉品牌。</p>
     </section>
 
+    <section id="competitor-insight-2">
+      <h2>低粉达人：用晒单 / 囤货制造真实购买氛围</h2>
+      <p class="section-intro">低粉内容不是简单补量，而是把品牌放进真实购买语境里，帮助用户完成临门一脚：有没有真实妈妈在买、是否适合长期日常购买、现在买是否划算、哪里买和怎么买更安心。</p>
+      <div class="card-grid">
+        <article class="card">
+          <p class="kicker">惠氏 · 1000-5000 粉层</p>
+          <h3>购物晒单 / 囤货</h3>
+          <div class="metric">26.4%</div>
+          <p>该层级 Top1。低粉内容更像真实购买场景，用晒单和囤货理由承接临门一脚。</p>
+        </article>
+        <article class="card">
+          <p class="kicker">飞鹤 · 1000-5000 粉层</p>
+          <h3>品牌活动 / 线下活动</h3>
+          <div class="metric">16.45%</div>
+          <p>该层级 Top2。活动内容把品牌触点落到线下、门店和可参与机制中。</p>
+        </article>
+        <article class="card">
+          <p class="kicker">飞鹤 · 1000-5000 粉层</p>
+          <h3>补贴促销 / 门店导购</h3>
+          <div class="metric">11.21%</div>
+          <p>该层级 Top3。促销与导购内容降低购买动作的不确定感，强化“现在怎么买”。</p>
+        </article>
+      </div>
+      <div class="media-grid">
+        <figure><img src="assets/IMG_0297.jpg" alt="澳优奶粉囤货晒单素材"></figure>
+        <figure><img src="assets/IMG_0240.jpg" alt="购物车截图类素材"></figure>
+        <figure><img src="assets/IMG_0241.jpg" alt="购买场景素材"></figure>
+      </div>
+      <p class="footnote">数据来源：小红书 2025.06-2026.06 奶粉行业内容数据；基于品牌关键词检索及蒲公英达人匹配，筛选粉丝量 &gt;200 达人内容，最终有效样本 137,897 条，覆盖 22 个奶粉品牌。</p>
+    </section>
+
+    <section id="competitor-insight-3">
+      <h2>低腰部达人：成为各大品牌对“痛点疑问解惑”的核心力量</h2>
+      <p class="section-intro">爱他美、a2、合生元持续绑定“敏感肠胃 / 特殊需求”等问题场景。这类内容发生在购买决策前夜，用户带着具体问题主动搜索时，品牌更容易进入高质量比较路径。</p>
+      <div class="insight-layout">
+        <div>
+          <div class="data-grid">
+            <article class="data-card">
+              <p class="kicker">爱他美 · 10,001-50,000 粉层</p>
+              <h3>敏感肠胃 / 特殊需求</h3>
+              <div class="metric">26.09%</div>
+              <p>该内容形态在腰部达人层级居前，适合承接“宝宝具体问题”相关搜索。</p>
+            </article>
+            <article class="data-card">
+              <p class="kicker">a2 · 10,001-50,000 粉层</p>
+              <h3>敏感肠胃 / 特殊需求</h3>
+              <div class="metric">24.65%</div>
+              <p>中腰部达人持续放大问题场景，形成稳定内容心智。</p>
+            </article>
+            <article class="data-card">
+              <p class="kicker">合生元 · 50,001-100,000 粉层</p>
+              <h3>敏感肠胃 / 特殊需求</h3>
+              <div class="metric">22.56%</div>
+              <p>功能型问题内容在腰部达人层级处于前列，帮助品牌提前进入比较路径。</p>
+            </article>
+          </div>
+          <div class="media-grid">
+            <figure><img src="assets/IMG_0298.jpg" alt="新生自护力选奶对比内容素材"></figure>
+            <figure><img src="assets/IMG_0299.jpg" alt="新生儿奶粉选择内容素材"></figure>
+            <figure><img src="assets/IMG_0300.jpg" alt="剖宝奶粉回购内容素材"></figure>
+          </div>
+        </div>
+        <aside class="insight-callout">
+          <p class="kicker">用户问题</p>
+          <h3>抢占购买决策前夜</h3>
+          <ul class="insight-list">
+            <li>宝宝肠胃敏感时，选奶前要先了解什么？</li>
+            <li>喂养吸收相关问题出现时，家长会搜索什么？</li>
+            <li>转奶不适应时，用户会如何比较品牌？</li>
+            <li>特殊喂养需求家庭，会优先收藏什么内容？</li>
+          </ul>
+        </aside>
+      </div>
+      <p class="footnote">数据来源：小红书 2025.06-2026.06 奶粉行业内容数据；基于品牌关键词检索及蒲公英达人匹配，筛选粉丝量 &gt;200 达人内容，最终有效样本 137,897 条，覆盖 22 个奶粉品牌。</p>
+    </section>
+
     <section id="competitor-insight-1">
       <h2>中高粉达人：用测评 / 对比进入用户候选清单</h2>
       <p class="section-intro">中高粉达人更像“选奶决策顾问”。她们帮助用户理解差异、降低风险，并推动品牌进入候选清单。</p>
@@ -1230,98 +1878,90 @@
           </div>
           <div class="script-box">美素佳儿、惠氏、爱他美等品牌，正在中高粉达人矩阵中明显加码“奶粉测评 / 横向对比”类内容占比。<br><br>其核心策略并非单纯增加产品信息曝光，而是借助中高粉达人更强的专业背书与用户信任感，在消费者进入高决策阶段时，通过“成分、营养、吸收、价格、适龄段”等维度的对比内容，提前完成用户决策心智占位，实现竞品决策拦截与转化承接。</div>
         </div>
-        <figure class="image-panel">
-          <img src="assets/32a946827b391f6bf33355fb7005e064.jpg" alt="测评类笔记拼图和对比表格视觉">
+        <figure class="image-panel demo-carousel" data-demo-index="0">
+          <img class="demo-slide is-active" src="assets/32a946827b391f6bf33355fb7005e064.jpg" alt="测评类笔记拼图和对比表格视觉">
+          <img class="demo-slide" src="assets/IMG_0301.jpg" alt="五款保护力奶粉实战测评素材">
+          <img class="demo-slide" src="assets/IMG_0302.jpg" alt="爱他美爆款深度测评素材">
+          <img class="demo-slide" src="assets/IMG_0303.jpg" alt="爱他美口粮选择测评素材">
+          <button class="demo-nav prev" type="button" aria-label="上一张">‹</button>
+          <button class="demo-nav next" type="button" aria-label="下一张">›</button>
+          <div class="demo-dots" aria-label="测评对比内容图片分页">
+            <button class="demo-dot is-active" type="button" aria-label="第 1 张"></button>
+            <button class="demo-dot" type="button" aria-label="第 2 张"></button>
+            <button class="demo-dot" type="button" aria-label="第 3 张"></button>
+            <button class="demo-dot" type="button" aria-label="第 4 张"></button>
+          </div>
           <figcaption class="caption">测评 / 对比内容承担理性解释、品牌候选清单进入和用户购买风险降低的任务。</figcaption>
         </figure>
       </div>
       <p class="footnote">数据来源：小红书 2025.06-2026.06 奶粉行业内容数据；基于品牌关键词检索及蒲公英达人匹配，筛选粉丝量 &gt;200 达人内容，最终有效样本 137,897 条，覆盖 22 个奶粉品牌。</p>
     </section>
 
-    <section id="competitor-insight-2">
-      <h2>低粉达人：用晒单 / 囤货制造真实购买氛围</h2>
-      <p class="section-intro">低粉内容不是简单补量，而是把品牌放进真实购买语境里，帮助用户完成临门一脚：有没有真实妈妈在买、是否适合长期日常购买、现在买是否划算、哪里买和怎么买更安心。</p>
-      <div class="card-grid">
-        <article class="card">
-          <p class="kicker">惠氏 · 1000-5000 粉层</p>
-          <h3>购物晒单 / 囤货</h3>
-          <div class="metric">26.4%</div>
-          <p>该层级 Top1。低粉内容更像真实购买场景，用晒单和囤货理由承接临门一脚。</p>
-        </article>
-        <article class="card">
-          <p class="kicker">飞鹤 · 1000-5000 粉层</p>
-          <h3>品牌活动 / 线下活动</h3>
-          <div class="metric">16.45%</div>
-          <p>该层级 Top2。活动内容把品牌触点落到线下、门店和可参与机制中。</p>
-        </article>
-        <article class="card">
-          <p class="kicker">飞鹤 · 1000-5000 粉层</p>
-          <h3>补贴促销 / 门店导购</h3>
-          <div class="metric">11.21%</div>
-          <p>该层级 Top3。促销与导购内容降低购买动作的不确定感，强化“现在怎么买”。</p>
-        </article>
-      </div>
-      <div class="media-grid">
-        <figure><img src="assets/IMG_0239.jpg" alt="囤货晒单素材"></figure>
-        <figure><img src="assets/IMG_0240.jpg" alt="购物车截图类素材"></figure>
-        <figure><img src="assets/IMG_0241.jpg" alt="购买场景素材"></figure>
-      </div>
-      <p class="footnote">数据来源：小红书 2025.06-2026.06 奶粉行业内容数据；基于品牌关键词检索及蒲公英达人匹配，筛选粉丝量 &gt;200 达人内容，最终有效样本 137,897 条，覆盖 22 个奶粉品牌。</p>
-    </section>
-
-    <section id="competitor-insight-3">
-      <h2>功能型品牌：提前进入高意图搜索场景</h2>
-      <p class="section-intro">a2、合生元持续绑定“敏感肠胃 / 特殊需求”等问题场景。这类内容发生在购买决策前夜，用户带着具体问题主动搜索时，品牌更容易进入高质量比较路径。</p>
-      <div class="insight-layout">
+    <section id="competitor-insight-a2">
+      <h2>高粉头部达人：利用人设形象完成人群价值占位</h2>
+      <p class="section-intro">A2 在高粉头部达人投放中占比达到 44.44%，明显高于行业平均水平。其重点不是单纯追求流量覆盖，而是借助高认同感人设，把产品卖点转化为育儿理念与身份认同。</p>
+      <div class="split">
         <div>
           <div class="data-grid">
             <article class="data-card">
-              <p class="kicker">a2 · 50,001-100,000 粉层</p>
-              <h3>敏感肠胃 / 特殊需求</h3>
-              <div class="metric">24.68%</div>
-              <p>该内容形态在腰部达人层级居前，适合承接“宝宝具体问题”相关搜索。</p>
+              <p class="kicker">A2 · 高粉头部达人</p>
+              <h3>投放占比</h3>
+              <div class="metric">44.44%</div>
+              <p>在高粉头部达人投放中占比明显高于行业平均，说明 A2 更重视高影响力账号的价值观表达能力。</p>
             </article>
             <article class="data-card">
-              <p class="kicker">a2 · 10,001-50,000 粉层</p>
-              <h3>敏感肠胃 / 特殊需求</h3>
-              <div class="metric">24.65%</div>
-              <p>中腰部达人持续放大问题场景，形成稳定内容心智。</p>
+              <p class="kicker">人设选择</p>
+              <h3>高认同感妈妈角色</h3>
+              <p>通过“留学妈妈”“职场精英妈妈”等人设，持续强化品牌高端、专业与国际化认知。</p>
+              <div class="tag-row">
+                <span class="tag">留学妈妈</span>
+                <span class="tag">职场精英妈妈</span>
+              </div>
             </article>
             <article class="data-card">
-              <p class="kicker">合生元 · 50,001-100,000 粉层</p>
-              <h3>敏感肠胃 / 特殊需求</h3>
-              <div class="metric">22.56%</div>
-              <p>功能型问题内容在腰部达人层级处于前列，帮助品牌提前进入比较路径。</p>
+              <p class="kicker">内容任务</p>
+              <h3>从卖点到身份认同</h3>
+              <p>借助头部达人更强的生活方式表达与价值观输出能力，把产品卖点转译成育儿理念。</p>
+              <div class="tag-row">
+                <span class="tag">高端心智</span>
+                <span class="tag">国际化认知</span>
+              </div>
             </article>
           </div>
-          <div class="media-grid">
-            <figure><img src="assets/IMG_0243.PNG" alt="用户问题搜索场景素材"></figure>
-            <figure><img src="assets/IMG_0244.PNG" alt="专业科普内容截图素材"></figure>
-            <figure><img src="assets/cover-gallery/trust-screenshot-bg.jpg" alt="专业科普内容拼图素材"></figure>
-          </div>
+          <div class="script-box">A2 在高粉头部达人投放中占比达到 44.44%，明显高于行业平均水平。<br><br>其策略重点并非单纯追求流量覆盖，而是通过“留学妈妈”“职场精英妈妈”等高认同感人设，持续强化品牌高端、专业与国际化认知。借助头部达人更强的生活方式表达与价值观输出能力，将产品卖点转化为育儿理念与身份认同，从而在用户心智中完成品牌价值沉淀与高端人群占位。</div>
         </div>
-        <aside class="insight-callout">
-          <p class="kicker">用户问题</p>
-          <h3>抢占购买决策前夜</h3>
-          <ul class="insight-list">
-            <li>宝宝肠胃敏感时，选奶前要先了解什么？</li>
-            <li>喂养吸收相关问题出现时，家长会搜索什么？</li>
-            <li>转奶不适应时，用户会如何比较品牌？</li>
-            <li>特殊喂养需求家庭，会优先收藏什么内容？</li>
-          </ul>
-        </aside>
+        <figure class="image-panel demo-carousel a2-carousel" data-demo-index="0">
+          <img class="demo-slide is-active" src="assets/competitor/IMG_0291.PNG" alt="A2 高粉头部达人投放笔记案例一">
+          <img class="demo-slide" src="assets/competitor/IMG_0293.PNG" alt="A2 高粉头部达人投放笔记案例二">
+          <img class="demo-slide" src="assets/competitor/IMG_0294.PNG" alt="A2 高粉头部达人投放笔记案例三">
+          <button class="demo-nav prev" type="button" aria-label="上一张">‹</button>
+          <button class="demo-nav next" type="button" aria-label="下一张">›</button>
+          <div class="demo-dots" aria-label="A2 高粉达人案例图片分页">
+            <button class="demo-dot is-active" type="button" aria-label="第 1 张"></button>
+            <button class="demo-dot" type="button" aria-label="第 2 张"></button>
+            <button class="demo-dot" type="button" aria-label="第 3 张"></button>
+          </div>
+          <figcaption class="caption">头部达人不只是放大声量，更适合把品牌价值包装成一种可被认同的育儿方式。</figcaption>
+        </figure>
       </div>
       <p class="footnote">数据来源：小红书 2025.06-2026.06 奶粉行业内容数据；基于品牌关键词检索及蒲公英达人匹配，筛选粉丝量 &gt;200 达人内容，最终有效样本 137,897 条，覆盖 22 个奶粉品牌。</p>
     </section>
 
     <section id="opportunity">
       <h2>澳优的机会：完整决策链路，而不是内容铺量</h2>
+      <p class="section-intro">回到新手父母真实的选奶过程，帮助澳优在用户开始比较之前先进入决策路径。</p>
       <div class="opportunity-rows">
         <div class="opportunity-row">
           <article class="ladder-step">
             <p class="kicker">Layer 01</p>
             <h3>问题进入</h3>
             <p>用低粉达人、真实妈妈和素人号内容，进入月龄、转奶、喂养焦虑、家庭沟通等搜索讨论及曝光路径。</p>
+            <div class="tag-row">
+              <span class="tag">低粉达人</span>
+              <span class="tag">真实妈妈</span>
+              <span class="tag">素人号</span>
+              <span class="tag">搜索讨论</span>
+            </div>
           </article>
           <figure><img src="assets/IMG_0245.jpg" alt="前置教育内容素材"></figure>
         </div>
@@ -1331,6 +1971,12 @@
             <p class="kicker">Layer 02</p>
             <h3>信任建立</h3>
             <p>用中高粉达人、专业测评、横向对比、成分解释与信息核验，帮助澳优进入品牌候选清单。</p>
+            <div class="tag-row">
+              <span class="tag">中高粉达人</span>
+              <span class="tag">专业测评</span>
+              <span class="tag">横向对比</span>
+              <span class="tag">信息核验</span>
+            </div>
           </article>
           <figure><img src="assets/IMG_0246.jpg" alt="真实喂养内容素材"></figure>
         </div>
@@ -1340,14 +1986,141 @@
             <p class="kicker">Layer 03</p>
             <h3>购买确认</h3>
             <p>用晒单、囤货理由、购买攻略、官方客服和活动承接，降低用户下单前的不确定感。</p>
+            <div class="tag-row">
+              <span class="tag">晒单</span>
+              <span class="tag">囤货理由</span>
+              <span class="tag">购买攻略</span>
+              <span class="tag">客服承接</span>
+            </div>
           </article>
           <figure><img src="assets/IMG_0247.jpg" alt="购买确认内容素材"></figure>
         </div>
       </div>
     </section>
 
+    <section id="matrix" class="creator-dark-board">
+      <h2>达人矩阵策略</h2>
+      <p class="section-intro">以“投前生产内容、投中提升确定性、投后度量全价值”的策略结构，把达人选择从账号清单升级为内容经营链路。</p>
+
+      <div class="creator-stage-grid" aria-label="投前投中投后三段策略">
+        <article class="creator-stage">
+          <div class="stage-pill pink">投前：生产好内容</div>
+          <div class="stage-panel">
+            <div class="stage-tiles">
+              <div class="stage-tile">
+                <strong>生产爆文</strong>
+                <span>内容洞察<br>内容选人</span>
+              </div>
+              <div class="stage-tile">
+                <strong>借势 IP</strong>
+                <span>孕产场景<br>育儿节点</span>
+              </div>
+              <div class="stage-tile">
+                <strong>定制内容</strong>
+                <span>达人定制短剧<br>真实喂养记录</span>
+              </div>
+              <div class="stage-tile">
+                <strong>用好口碑</strong>
+                <span>好物种草团<br>本地探店团</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="creator-stage">
+          <div class="stage-pill blue">投中：提升确定性</div>
+          <div class="stage-panel">
+            <div class="stage-line">
+              <strong>目标优化</strong>
+              <span>AIPS 营销目标优化：CPUV看后搜目标优化。</span>
+            </div>
+            <div class="stage-line">
+              <strong>组件提效</strong>
+              <span>共创内容；搜索组件；评论区承接。</span>
+            </div>
+            <div class="stage-line">
+              <strong>全链打通</strong>
+              <span>小红星 / 小红盟：实现曝光、搜索、进店、购买全链路打通。</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="creator-stage">
+          <div class="stage-pill cyan">投后：度量全价值</div>
+          <div class="stage-panel">
+            <div class="value-tabs">
+              <span>传播价值：cpm</span>
+              <span>种草价值：ctr</span>
+              <span>转化价值：cpuv</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="creator-flow" aria-label="达人策略三步法">
+        <div class="flow-step">
+          <strong>Step1</strong>
+          <span>对谁说</span>
+        </div>
+        <div class="flow-arrow">⋯›</div>
+        <div class="flow-step">
+          <strong>Step2</strong>
+          <span>说什么</span>
+        </div>
+        <div class="flow-arrow">⋯›</div>
+        <div class="flow-step">
+          <strong>Step3</strong>
+          <span>找谁说</span>
+        </div>
+      </div>
+
+      <div class="creator-step-grid">
+        <article class="step-panel">
+          <h3>分析本品 & 竞品购买人群<br>锁定三类核心消费人群</h3>
+          <div class="persona-bubbles">
+            <span>孕期<br>准妈妈</span>
+            <span>0-3 岁<br>宝宝妈妈</span>
+            <span>精细化<br>喂养家庭</span>
+          </div>
+          <p>从品类购买人群、本品潜在人群、竞品已教育人群中，找到澳优的机会家庭。</p>
+        </article>
+
+        <article class="step-panel blue-accent">
+          <h3>分析 TA 内容偏好与痛点<br>构建种草公式</h3>
+          <div class="step-tags">
+            <span>换奶问题</span>
+            <span>喂养问题</span>
+            <span>清洁问题</span>
+          </div>
+          <div class="creator-node-row">
+            <span>信任<br>建立</span>
+            <span>场景<br>种草</span>
+            <span>搜索<br>承接</span>
+            <span>转化<br>推动</span>
+          </div>
+          <p>用内容任务反推达人类型，避免所有达人讲同一套卖点。</p>
+        </article>
+
+        <article class="step-panel">
+          <h3>结合内容方向选择达人<br>内容类型与达人类型精准匹配</h3>
+          <div class="step-tags">
+            <span>KOL 建信任</span>
+            <span>KOC 做渗透</span>
+            <span>UGC 铺口碑</span>
+          </div>
+          <div class="persona-bubbles">
+            <span>家庭类</span>
+            <span>家居类</span>
+            <span>测评类</span>
+            <span>生活类</span>
+          </div>
+          <p>粗筛看内容类型，细筛看内容策略、热点洞察、历史合作、粉丝画像和商业配合度。</p>
+        </article>
+      </div>
+    </section>
+
     <section id="personas">
-      <h2>三类人群：从准备到长期选择</h2>
+      <h2>Step 1 对谁说——三类人群：从准备到长期选择</h2>
       <p class="section-intro">这不是三群完全分开的用户，而是家庭在 0-36 月龄喂养周期里的三种典型状态。同一个家庭，也可能从孕晚期准备逐渐进入转段磨合，再进入长期购买规划。</p>
       <div class="path-lab">
         <div class="control-stack">
@@ -1360,7 +2133,7 @@
     </section>
 
     <section id="path">
-      <h2>用户真正购买的是哪一件事？</h2>
+      <h2>Step 2 说什么——三大内容场景：让内容接力用户决策</h2>
       <p class="section-intro">在小红书，奶粉决策不是一次完成。用户先寻找“自己不慌”的理想状态，再代入真实喂养生活，最后才会用理性信息确认是否进入购买。</p>
       <div class="path-lab">
         <div class="control-stack">
@@ -1371,23 +2144,9 @@
         <article class="output" id="path-output" aria-live="polite"></article>
       </div>
     </section>
-
-    <section id="scenes">
-      <h2>三大内容场景：让内容接力用户决策</h2>
-      <p class="section-intro">这套内容体系不是反复发布同一种笔记，而是让前置教育、真实喂养和理性转化分别承担搜索、收藏、比较、咨询和购买确认的任务。</p>
-      <div class="story-board">
-        <div class="control-stack">
-          <button class="scene-btn is-active" type="button" data-scene="education">第一层｜选奶前置教育场</button>
-          <button class="scene-btn" type="button" data-scene="feeding">第二层｜真实喂养场景场</button>
-          <button class="scene-btn" type="button" data-scene="decision">第三层｜理性决策转化场</button>
-        </div>
-        <article class="output" id="scene-output" aria-live="polite"></article>
-      </div>
-    </section>
-
     <section id="content-demo">
       <h2>内容 Demo：把策略变成可发布笔记</h2>
-      <p class="section-intro">每一层内容都需要明确目标、标题钩子、卖点植入边界和互动承接方式。0-12 月龄相关内容坚持科学喂养教育与官方咨询导向，不做直接种草转化。</p>
+      <p class="section-intro">让前置教育、真实喂养和理性转化分别承担搜索、收藏、比较、咨询和购买确认的任务。</p>
       <div class="demo-grid">
         <article class="demo-card">
           <figure class="demo-image demo-carousel" data-demo-index="0">
@@ -1404,13 +2163,13 @@
             <figcaption class="label">前置教育 · 搜索收藏</figcaption>
           </figure>
           <div class="demo-body">
-            <p class="kicker">目标：点击率 / 收藏率 / 咨询入口</p>
-            <h3 class="demo-title">新手爸妈初次看奶粉，先别被成分表绕晕</h3>
-            <p class="demo-meta">从“看不懂奶粉罐”切入，把选择拆成月龄、产品名称、注册信息、官方渠道、客服咨询五个动作。</p>
+            <p class="kicker">目标：点击率 / 收藏率 / 曝光入口</p>
+            <h3 class="demo-title">Chill妈妈养娃的底气…选对口粮是关键♨️</h3>
             <ul class="demo-list">
-              <li>钩子：真正卡住的不是买哪一罐，而是不知道先看哪里。</li>
-              <li>植入：以澳优为案例，展示如何核验产品与官方信息。</li>
-              <li>CTA：评论区留下月龄和选择阶段，领取选奶信息清单。</li>
+              <li>标题策略：采用“人设标签+情绪价值+核心观点”结构（“Chill妈妈”+“养娃的底气”+“选对口粮是关键”），塑造轻松从容的育儿形象。</li>
+              <li>切入点：围绕“奶粉选择困难”展开，塑造专业且负责的妈妈形象，增强用户信任感。</li>
+              <li>痛点塑造：通过“刷育儿文献、收藏测评、对比十几款奶粉”等行为，侧面呈现宝妈在选奶粉时信息过载、担心选错、害怕影响宝宝成长的普遍焦虑，引发共鸣。</li>
+              <li>解决方案引入：以“职业病式做功课”和“亲自对比十几款产品”为信任背书，自然引出最终选择，增强种草可信度。</li>
             </ul>
           </div>
         </article>
@@ -1430,13 +2189,13 @@
             <figcaption class="label">真实喂养 · 生活共鸣</figcaption>
           </figure>
           <div class="demo-body">
-            <p class="kicker">目标：分享率 / 信任感 / 真实讨论</p>
-            <h3 class="demo-title">有娃后才懂，奶粉区不是摆整齐就够了</h3>
-            <p class="demo-meta">从夜间喂养动线入手，讲奶粉、温水、量勺、记录表、客服卡片如何放置，减少家庭成员操作差异。</p>
+            <p class="kicker">目标：曝光率 / 信任感 / 真实讨论</p>
+            <h3 class="demo-title">二胎妈的清醒：选对奶粉，带娃轻松一个level</h3>
             <ul class="demo-list">
-              <li>钩子：晚上最怕的不是起夜，而是全家找东西、问步骤。</li>
-              <li>植入：出现澳优包装与官方冲调建议，不承诺成长结果。</li>
-              <li>CTA：收藏夜间喂养区清单，评论交流自家动线。</li>
+              <li>标题策略：采用“身份标签+认知升级+利益结果”结构（“二胎妈的清醒”+“选对奶粉”+“带娃轻松一个level”），强化过来人经验背书。</li>
+              <li>切入点：从二胎妈妈真实育儿痛点切入，而非直接介绍产品，引发目标用户共鸣。</li>
+              <li>痛点塑造：通过“一胎踩坑经历”（便秘、夜醒、胀气、跑医院）放大育儿焦虑，建立情感连接。</li>
+              <li>解决方案引入：以“闺蜜推荐”为信任来源，自然带出产品，降低广告感。</li>
             </ul>
           </div>
         </article>
@@ -1456,88 +2215,167 @@
             <figcaption class="label">理性转化 · 购买确认</figcaption>
           </figure>
           <div class="demo-body">
-            <p class="kicker">目标：咨询 / 加购 / 官方承接</p>
-            <h3 class="demo-title">准备买奶粉前，我会再确认这 5 件事</h3>
-            <p class="demo-meta">从下单前核验清单切入，覆盖月龄段、产品线、官方渠道、包装信息、客服确认。</p>
+            <p class="kicker">目标：进店转化率 / 加购 / 官方承接</p>
+            <h3 class="demo-title">有人喝过海普诺凯吗？到底长不长肉啊🤔</h3>
             <ul class="demo-list">
-              <li>钩子：越接近购买，越要把信息核清楚。</li>
-              <li>植入：以官方旗舰店、品牌号、产品包装信息为核心触点。</li>
-              <li>CTA：领取下单前核验清单，承接到客服和官方店铺。</li>
+              <li>标题策略：采用“用户提问+核心需求痛点”结构，以真实求助口吻开场，弱化广告属性，激发同类妈妈点击查看经验分享。</li>
+              <li>切入点：从“选奶粉太难”这一高频育儿难题切入，通过亲身经历建立信任感，让后续推荐更具说服力。</li>
+              <li>痛点塑造：围绕“宝宝不长肉”展开焦虑场景描述。通过“体质不好”“和同龄宝宝一起玩时明显偏瘦”“辅食和奶量达标却不长肉”等细节，精准击中宝妈对生长发育落后的担忧，引发强烈共鸣。</li>
+              <li>解决方案引入：以“早教班妈妈推荐”为信任来源，通过真实社群交流场景自然带出产品，降低营销感。</li>
             </ul>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="matrix">
-      <h2>达人矩阵策略</h2>
-      <p class="section-intro">达人不是按粉丝量简单分层，而是按用户决策阶段分工。核心原则是账号人设、宝宝月龄、内容任务和合规边界同时匹配。</p>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>达人类型</th>
-              <th>主要角色</th>
-              <th>适合内容</th>
-              <th>筛选标准</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>母婴科普型达人</td>
-              <td>前置教育和搜索承接</td>
-              <td>月龄选择逻辑、奶粉信息阅读、转段转奶准备、喂养问题咨询边界。</td>
-              <td>表达克制、信息来源清楚、评论答疑不越界、历史内容无高风险功效承诺。</td>
-            </tr>
-            <tr>
-              <td>真实育儿 KOC</td>
-              <td>生活场景渗透和信任共鸣</td>
-              <td>夜间喂养、外出携带、家庭分工、转段记录、奶粉区收纳。</td>
-              <td>生活感强、广告痕迹弱、宝宝月龄匹配、评论区有真实同龄家庭讨论。</td>
-            </tr>
-            <tr>
-              <td>育儿消费决策达人</td>
-              <td>理性转化和购买确认</td>
-              <td>下单前核验清单、官方渠道购买提示、产品线差异提问、活动期购买标准。</td>
-              <td>擅长表格/清单/测评表达，能把“怎么买更稳”说清楚，不只堆优惠。</td>
-            </tr>
-            <tr>
-              <td>品牌号与客服承接</td>
-              <td>统一口径和官方信任入口</td>
-              <td>评论区答疑、私信清单、产品信息核验、官方店铺与客服导流。</td>
-              <td>回复及时、合规口径稳定、能沉淀高频问题，形成下一轮选题。</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+    <section id="selector" class="creator-red-board">
+      <h2>Step 3 找谁说——选号机制：达人合作标准升级</h2>
+      <p class="section-intro">参考红白咨询图的“背景 - 解法 - 收货价值”结构，把选号机制做成一张经营矩阵：上层定标准，中层搭链路，下层看价值。</p>
+      <div class="red-system">
+        <div class="red-rail" aria-label="策略阶段">
+          <span>背景</span>
+          <span>解法</span>
+          <span>收货价值</span>
+        </div>
 
-    <section id="selector">
-      <h2>选号机制：找到能承担任务的账号</h2>
-      <p class="section-intro">选号目标不是找到“看起来流量大”的账号，而是找到真实、匹配、效率可控且合作风险低的账号。</p>
-      <div class="selector-grid">
-        <article class="selector-card">
-          <div class="step-num">01</div>
-          <h3>人群匹配</h3>
-          <p>确认宝宝月龄、家庭阶段、账号内容是否对应新手准备、喂养磨合或成长规划。</p>
-        </article>
-        <article class="selector-card">
-          <div class="step-num">02</div>
-          <h3>内容匹配</h3>
-          <p>判断账号是否擅长清单、记录、测评、生活场景或购买攻略，而不是只看粉丝量。</p>
-        </article>
-        <article class="selector-card">
-          <div class="step-num">03</div>
-          <h3>互动质量</h3>
-          <p>看评论是否有同龄家庭提问、是否引发收藏咨询、是否存在异常刷量痕迹。</p>
-        </article>
-        <article class="selector-card">
-          <div class="step-num">04</div>
-          <h3>合作风险</h3>
-          <p>核对排竞、置顶、素材授权、报价结构、服务费和合规脚本审核接受度。</p>
-        </article>
+        <div class="red-board-body">
+          <div class="red-top-grid">
+            <article class="red-panel">
+              <div class="red-title">达人合作品牌筛选标准升级</div>
+              <div class="red-panel-body">
+                <div class="red-tree">
+                  <div class="red-circle">合作<br>要求</div>
+                  <div class="red-branches">
+                    <div class="red-branch">
+                      <strong>产品</strong>
+                      <span class="red-chip">产品受众</span>
+                      <span class="red-chip">产品卖点</span>
+                    </div>
+                    <div class="red-branch">
+                      <strong>品牌</strong>
+                      <span class="red-chip">品牌口碑</span>
+                      <span class="red-chip">品牌背书</span>
+                    </div>
+                    <div class="red-branch">
+                      <strong>合作</strong>
+                      <span class="red-chip">合作机制</span>
+                      <span class="red-chip">合作形式</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="red-panel">
+              <div class="red-title">国货投放达人要求趋于精细</div>
+              <div class="red-panel-body">
+                <div class="red-mini-table">
+                  <div class="red-mini-row">
+                    <strong>内容传播</strong>
+                    <span>总曝光量、总互动量、总粉丝量</span>
+                  </div>
+                  <div class="red-mini-row">
+                    <strong>达人调性</strong>
+                    <span>达人风格、内容类别、内容形式</span>
+                  </div>
+                  <div class="red-mini-row">
+                    <strong>用户触达</strong>
+                    <span>粉丝性别、地域、年龄、城市线级</span>
+                  </div>
+                  <div class="red-mini-row">
+                    <strong>品牌背书</strong>
+                    <span>博主口碑、粉丝信任度</span>
+                  </div>
+                  <div class="red-mini-row">
+                    <strong>带货转化</strong>
+                    <span>粉丝购买力、博主带货能力</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="red-banner">
+            <span>布局线索经营核心场景，搭建一体化经营矩阵</span>
+            <span>信息本身较外部噪声的影响更为可控</span>
+          </div>
+
+          <div class="red-top-grid">
+            <article class="red-panel">
+              <div class="red-title">三大核心场景 × 基础运营能力</div>
+              <div class="red-panel-body">
+                <div class="red-operation">
+                  <div class="red-op-card">
+                    <h3>内容</h3>
+                    <p>短视频、直播、视频笔记、服务卖点；负责种草信息生产。</p>
+                  </div>
+                  <div class="red-op-card">
+                    <h3>搜索</h3>
+                    <p>搜索承接、品牌词/品类词露出；负责高意图用户拦截。</p>
+                  </div>
+                  <div class="red-op-card">
+                    <h3>咨询</h3>
+                    <p>电话咨询、企业私信、客服承接；负责下单前疑虑消除。</p>
+                  </div>
+                </div>
+                <div class="red-operation">
+                  <div class="red-op-card">
+                    <h3>阵地</h3>
+                    <p>品牌号、店铺、商品页、线下门店，承接官方核验。</p>
+                  </div>
+                  <div class="red-op-card">
+                    <h3>新客</h3>
+                    <p>萌宝主页、评论关系、反馈通道，沉淀高频问题。</p>
+                  </div>
+                  <div class="red-op-card">
+                    <h3>分析</h3>
+                    <p>达人数据、内容数据、搜索数据，反哺下一轮 brief。</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="red-panel">
+              <div class="red-title">从外部声量回到可控链路</div>
+              <div class="red-panel-body">
+                <div class="red-loop">
+                  <div class="red-loop-stage">
+                    <div class="red-loop-dot">发送者</div>
+                    <div class="red-loop-copy">
+                      <span>种草</span>
+                      <span>评论</span>
+                      <span>搜索</span>
+                    </div>
+                  </div>
+                  <div class="red-loop-stage">
+                    <div class="red-loop-dot">接受者</div>
+                    <div class="red-loop-copy">
+                      <span>咨询</span>
+                      <span>核验</span>
+                      <span>购买</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="red-value-grid">
+            <article class="red-value">
+              <strong>种草价值与转化能力</strong>
+              <span>收藏、评论区疑问、CPE、搜索回流。</span>
+            </article>
+            <article class="red-value">
+              <strong>场景化有共鸣的内容链接</strong>
+              <span>真实喂养场景、家庭选择理由、内容到品牌项目承接。</span>
+            </article>
+            <article class="red-value">
+              <strong>科学的达人选取与结果复盘</strong>
+              <span>投前筛选、投后优化，沉淀创作者画像体系。</span>
+            </article>
+          </div>
+        </div>
       </div>
-      <p class="footnote">提报字段建议包含：种草类型、达人量级、宝宝月龄、互动率、排竞、置顶、素材授权、含服务费报价。</p>
     </section>
 
     <section id="iteration">
@@ -1560,7 +2398,6 @@
           <p>如果用户接近购买仍犹豫，补官方渠道核验、产品线问法、囤货标准和活动期清单。</p>
         </article>
       </div>
-      <div class="script-box"><strong>最终收口：</strong>澳优在小红书上不应只被定义为一罐奶粉，而要成为新手父母选奶过程里的信息整理者、真实场景陪伴者和理性决策证据提供者。真正有效的内容，不是把澳优讲得更响，而是把父母的选择过程讲得更清楚。</div>
     </section>
 
     <section class="ending" id="ending">
@@ -1568,7 +2405,7 @@
         <div class="ending-copy">
           <p class="kicker">Final Thought</p>
           <h2>谁先帮父母理清问题，谁就更有机会被认真考虑。</h2>
-          <p class="lead">奶粉赛道的小红书竞争，表面看是品牌、配方、达人资源的竞争，本质上是用户决策路径的竞争。</p>
+          <p class="lead">澳优在小红书上不应只被定义为一罐奶粉，而要成为新手父母选奶过程里的信息整理者、真实场景陪伴者和理性决策证据提供者。真正有效的内容，不是把澳优讲得更响，而是把父母的选择过程讲得更清楚</p>
         </div>
         <figure class="ending-image">
           <img src="assets/澳优 logo 2.png" alt="澳优 logo">
@@ -1642,7 +2479,11 @@
           </div>
         </aside>
       </div>
-      <div class="table-wrap" style="margin-top:14px">
+      <p class="footnote">这一页作为附录，主要用于说明本方案中的竞品判断和百分比数据来自统一口径的数据清洗与达人匹配，不是单篇笔记观察或主观抽样。</p>
+
+      <h3>content_category 内容形态分类</h3>
+      <p class="section-intro">以下为内容形态打标字段 <code>content_category</code> 的主要取值及含义概要，用于解释竞品内容占比计算中的分类口径。</p>
+      <div class="table-wrap">
         <table>
           <thead>
             <tr>
@@ -1722,7 +2563,6 @@
           </tbody>
         </table>
       </div>
-      <p class="footnote">这一页作为附录，主要用于说明本方案中的竞品判断和百分比数据来自统一口径的数据清洗与达人匹配，不是单篇笔记观察或主观抽样。</p>
     </section>
 
     <section id="cover-appendix">
@@ -1732,7 +2572,7 @@
       <div class="cover-strategy-grid">
         <article class="cover-card">
           <figure>
-            <img src="assets/cover-gallery/click-baby-product.jpg" alt="点击进入型封面样张">
+            <img src="assets/cover 2.0/strategy-click.jpg" alt="点击进入型 618 母婴囤货清单封面样张">
           </figure>
           <div class="cover-card-body">
             <p class="kicker">Click · 点击进入型</p>
@@ -1748,7 +2588,7 @@
 
         <article class="cover-card">
           <figure>
-            <img src="assets/cover-gallery/trust-science.jpg" alt="信任建立型封面样张">
+            <img src="assets/cover 2.0/strategy-trust.jpg" alt="信任建立型 HMO 科普知识封面样张">
           </figure>
           <div class="cover-card-body">
             <p class="kicker">Trust · 信任建立型</p>
@@ -1764,7 +2604,7 @@
 
         <article class="cover-card">
           <figure>
-            <img src="assets/cover-gallery/convert-stockpile.jpg" alt="转化临门型封面样张">
+            <img src="assets/cover 2.0/strategy-convert.jpg" alt="转化临门型 囤货与订单确认封面样张">
           </figure>
           <div class="cover-card-body">
             <p class="kicker">Convert · 转化临门型</p>
@@ -1779,14 +2619,23 @@
         </article>
       </div>
 
+      <h3>高转化封面代表样张</h3>
+      <p class="section-intro">每组选择代表性封面，用于说明不同策略价值的视觉表达：真实场景拉动点击、测评信息建立信任、促销与好评完成转化承接。</p>
       <div class="cover-gallery-strip" aria-label="高转化封面代表样张">
-        <figure><img src="assets/cover-gallery/click-handheld.jpg" alt="手持产品真实喂养场景封面样张"></figure>
-        <figure><img src="assets/cover-gallery/trust-evaluation.jpg" alt="测评型高密度信息图样张"></figure>
-        <figure><img src="assets/cover-gallery/convert-promo.png" alt="大促信息拼图封面样张"></figure>
-        <figure><img src="assets/cover-gallery/convert-review.jpg" alt="购物好评截图封面样张"></figure>
+        <figure><img src="assets/cover 2.0/gallery-01.jpg" alt="奶粉品牌对比结论封面样张"></figure>
+        <figure><img src="assets/cover 2.0/gallery-02.jpg" alt="德系配方奶粉销量榜封面样张"></figure>
+        <figure><img src="assets/cover 2.0/gallery-03.jpg" alt="婴儿奶粉购物车价格对比封面样张"></figure>
+        <figure><img src="assets/cover 2.0/gallery-04.jpg" alt="618 母婴囤货攻略封面样张"></figure>
+        <figure><img src="assets/cover 2.0/gallery-05.jpg" alt="婴幼儿奶粉配方成分对比封面样张"></figure>
+        <figure><img src="assets/cover 2.0/gallery-06.jpg" alt="澳洲妈妈高赞配方奖封面样张"></figure>
+        <figure><img src="assets/cover 2.0/gallery-07.jpg" alt="多品牌奶粉囤货实拍封面样张"></figure>
+        <figure><img src="assets/cover 2.0/gallery-08.jpg" alt="精简待产包分享封面样张"></figure>
+        <figure><img src="assets/cover 2.0/gallery-09.jpg" alt="商超婴幼儿奶粉货架实拍封面样张"></figure>
       </div>
 
-      <div class="table-wrap" style="margin-top:14px">
+      <h3>封面 brief 机制与调用表</h3>
+      <p class="section-intro">后续内容不建议每条笔记重新凭感觉定封面，而要让每一张封面都对应明确的内容任务，并在 brief 中同步约定选题方向、封面形式、达人类型与转化目标。</p>
+      <div class="table-wrap">
         <table>
           <thead>
             <tr>
@@ -1877,8 +2726,8 @@
         copy: "孕晚期、新手爸妈、0-6 月龄家庭，信息摄入量大但判断标准不稳定。她们需要基础知识、月龄逻辑、官方信息入口和可咨询的边界。",
         tags: ["孕晚期", "0-6 月龄", "基础知识", "官方咨询", "先看懂再决定"],
         script: "建议表达：把选择拆成步骤，给新手家庭一份喂养信息整理。避免直接催促购买、制造焦虑或夸大成分作用。",
-        image: "assets/cover-gallery/click-still-real.jpg",
-        imageAlt: "新手安心派家庭场景"
+        image: "assets/IMG_0304.jpg",
+        imageAlt: "孕晚期新手家庭准备场景"
       },
       routine: {
         kicker: "喂养磨合派",
@@ -1886,8 +2735,8 @@
         copy: "6-18 月龄家庭开始经历转段、转奶、辅食衔接、外出喂养等复杂场景。她们既看产品信息，也看其他家庭的真实经验。",
         tags: ["6-18 月龄", "转段转奶", "外出喂养", "家庭协作", "记录替代猜测"],
         script: "内容任务是把喂养流程拍具体，把家庭分工讲清楚，把转奶和转段变成可记录、可复盘的动作。",
-        image: "assets/cover-gallery/click-baby-product.jpg",
-        imageAlt: "喂养磨合派家庭场景"
+        image: "assets/IMG_0305.jpg",
+        imageAlt: "宝宝外出喂养磨合场景"
       },
       planner: {
         kicker: "成长规划派",
@@ -1895,8 +2744,8 @@
         copy: "18-36 月龄家庭对产品线、价格带、囤货节奏、家庭长期选择更敏感。转化意愿较高，但也更重视渠道稳定和家庭标准一致。",
         tags: ["18-36 月龄", "产品线", "预算", "囤货节奏", "家庭购买标准"],
         script: "建议表达：把奶粉从临时购买变成家庭计划，按月龄、渠道、预算三项做选择，官方渠道信息优先核验。",
-        image: "assets/cover-gallery/convert-stockpile.jpg",
-        imageAlt: "成长规划派购买规划场景"
+        image: "assets/IMG_0306.jpg",
+        imageAlt: "家庭长期囤货购买规划场景"
       }
     };
 
@@ -1945,7 +2794,6 @@
 
     initInteractive(".path-btn", "#path-output", pathData, "ideal");
     initInteractive(".persona-btn", "#persona-output", personaData, "starter");
-    initInteractive(".scene-btn", "#scene-output", sceneData, "education");
 
     document.querySelectorAll(".demo-carousel").forEach((carousel) => {
       const slides = Array.from(carousel.querySelectorAll(".demo-slide"));
